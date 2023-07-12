@@ -4,13 +4,20 @@
     align-items: center;
 
     .subContainer {
-        font-size: 2.5rem;
         display: flex;
         align-items: center;
-        gap: 10px;
-    }
+        flex-direction: column;
 
-    p {
-        font-size: 1.1rem;
+        .h1 {
+            font-size: 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-direction: row;
+        }
+    
+        p {
+            font-size: 1.1rem;
+        }
     }
 }
