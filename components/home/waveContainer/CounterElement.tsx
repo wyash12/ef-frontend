@@ -3,21 +3,15 @@ import classes from "./CounterElement.module.scss";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import { Bounce } from "react-awesome-reveal";
+import { CounterElementType } from "@/data/counter_data";
 
-interface propsType {
-  icon: JSX.Element;
-  number: number;
-  firstTitle: string;
-  secondTitle: string;
-}
-
-export default function CounterElement(props: propsType) {
+export default function CounterElement(props: CounterElementType) {
   const { ref: counterRef, inView: counterInView } = useInView();
   const [isInit, setIsInit] = useState(true);
 
   return (
     <div className={classes.container} ref={counterRef}>
-      <Bounce>
+      <Bounce triggerOnce>
         <div className={classes.subContainer}>
           <h1>
             {props.icon}{" "}

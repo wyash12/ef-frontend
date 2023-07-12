@@ -1,10 +1,7 @@
 import CounterElement from "./CounterElement";
 import classes from "./WaveContainer.module.scss";
 import { FaHeart } from "react-icons/fa";
-import { HiUserGroup } from "react-icons/hi";
-import { BiSolidUserAccount } from "react-icons/bi";
-import { IoConstruct } from "react-icons/io5";
-import { ImHourGlass } from "react-icons/im";
+import { CounterData } from "@/data/counter_data";
 
 export default function WaveContainer() {
   return (
@@ -15,32 +12,7 @@ export default function WaveContainer() {
           The most adored community <FaHeart className={classes.heart} />
         </h1>
         <div className={classes.counterDiv}>
-          {[
-            {
-              icon: <HiUserGroup />,
-              number: 1500,
-              firstTitle: "Student",
-              secondTitle: "Transformed",
-            },
-            {
-              icon: <BiSolidUserAccount />,
-              number: 950,
-              firstTitle: "Placed",
-              secondTitle: "Students",
-            },
-            {
-              icon: <IoConstruct />,
-              number: 85,
-              firstTitle: "Workshops",
-              secondTitle: "Conducted",
-            },
-            {
-              icon: <ImHourGlass />,
-              number: 6000,
-              firstTitle: "Training",
-              secondTitle: "Hours",
-            },
-          ].map((element, index) => {
+          {CounterData.map((element, index) => {
             return (
               <CounterElement
                 key={index}
