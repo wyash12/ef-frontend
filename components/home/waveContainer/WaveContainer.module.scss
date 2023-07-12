@@ -1,0 +1,57 @@
+.ocean { 
+  height: 60vh;
+  width: 100%;
+  position: relative;
+
+  .wave {
+    background: url(../../../public/wave.png) repeat-x; 
+    position: absolute;
+    bottom: 0;
+    width: 6400px;
+    height: 100%;
+    animation: wave 38s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+    // z-index: 99;
+  }
+
+  .values {
+    // z-index: 100;
+    position: absolute;
+    height: 50vh;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      
+      .heart {
+        color: rgba(255, 0, 0, 0.973);
+        // background-color: red;
+      }
+    }
+
+    .counterDiv {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      // padding: 0 10rem;
+    } 
+
+  }
+}
+
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
