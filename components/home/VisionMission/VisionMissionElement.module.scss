@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    width: 80%;
+    margin: 2rem 0;
+    justify-content: space-evenly;
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        width: 50%;
+
+        h1 {
+            color: #22405B;
+            font-size: 4.5rem;
+        }
+
+        p {
+            font-size: 1.8 rem;
+        }
+    }
+
+    .img {
+        width: 30%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: auto;
+            width: 80%;
+        }
+    }
+
+}

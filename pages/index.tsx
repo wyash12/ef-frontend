@@ -1,7 +1,8 @@
 import Navbar from "@/components/common/Navbar";
-import CourseContainer from "@/components/home/CourseContainer/CourseContainer";
-import TitleContainer from "@/components/home/LandingContainer/TitleContainer";
-import WaveContainer from "@/components/home/WaveContainer/WaveContainer";
+import CourseContainer from "@/components/home/Course/CourseContainer";
+import TitleContainer from "@/components/home/Landing/TitleContainer";
+import VisionMissionContainer from "@/components/home/VisionMission/VisionMissionContainer";
+import WaveContainer from "@/components/home/Wave/WaveContainer";
 import Head from "next/head";
 
 export default function HomePage(): JSX.Element {
@@ -15,6 +16,7 @@ export default function HomePage(): JSX.Element {
       <TitleContainer />
       <WaveContainer />
       <CourseContainer />
+      <VisionMissionContainer />
     </>
   );
 }
