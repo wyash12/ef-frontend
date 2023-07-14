@@ -6,16 +6,16 @@ import Button from "./Button";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
   const router = useRouter();
   const [flexClassOur, setFlexClassOur] = useState("none");
   const [flexClassAbout, setFlexClassAbout] = useState("none");
 
-  function onClickRegisterHandler() {
+  function onClickRegisterHandler(): void {
     router.push("/home");
   }
 
-  function onMouseHoverEvent(value: number) {
+  function onMouseHoverEvent(value: number): void {
     if (value == 1) {
       setFlexClassOur("flex");
     } else {
@@ -23,7 +23,7 @@ export default function Navbar() {
     }
   }
 
-  function onMouseOutEvent(value: number) {
+  function onMouseOutEvent(value: number): void {
     if (value == 1) {
       setFlexClassOur("none");
     } else {

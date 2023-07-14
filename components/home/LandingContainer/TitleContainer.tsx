@@ -4,7 +4,7 @@ import titleContainerImage from "../../../public/title_container.png";
 import Button from "../../common/Button";
 import TypewriterComponent from "typewriter-effect";
 
-export default function TitleContainer() {
+export default function TitleContainer(): JSX.Element {
   return (
     <div className={classes.container}>
       <div className={classes.titleContainer}>

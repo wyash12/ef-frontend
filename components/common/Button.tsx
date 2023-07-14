@@ -6,7 +6,7 @@ interface propsType {
   fontSize?: number;
   onClick: VoidFunction;
 }
-export default function Button(props: propsType) {
+export default function Button(props: propsType): JSX.Element {
   return (
     <button
       className={classes.button}

@@ -5,7 +5,11 @@ import { useState } from "react";
 import { Bounce } from "react-awesome-reveal";
 import { CounterElementType } from "@/data/counter_data";
 
-export default function CounterElement(props: CounterElementType) {
+export default function CounterElement({
+  data,
+}: {
+  data: CounterElementType;
+}): JSX.Element {
   const { ref: counterRef, inView: counterInView } = useInView();
   const [isInit, setIsInit] = useState(true);
 
@@ -14,10 +18,10 @@ export default function CounterElement(props: CounterElementType) {
       <Bounce triggerOnce>
         <div className={classes.subContainer}>
           <h1>
-            {props.icon}{" "}
+            {data.icon}{" "}
             {counterInView && isInit ? (
               <CountUp
-                end={props.number}
+                end={data.number}
                 onEnd={() => {
                   setIsInit(false);
                 }}
@@ -27,12 +31,12 @@ export default function CounterElement(props: CounterElementType) {
                 {({ countUpRef }) => <span ref={countUpRef} />}
               </CountUp>
             ) : (
-              <span>{props.number}</span>
+              <span>{data.number}</span>
             )}
             +
           </h1>
-          <p>{props.firstTitle}</p>
-          <p>{props.secondTitle}</p>
+          <p>{data.firstTitle}</p>
+          <p>{data.secondTitle}</p>
         </div>
       </Bounce>
     </div>
