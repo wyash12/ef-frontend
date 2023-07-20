@@ -3,6 +3,7 @@ import CourseContainer from "@/components/home/Course/CourseContainer";
 import TitleContainer from "@/components/home/Landing/TitleContainer";
 import VisionMissionContainer from "@/components/home/VisionMission/VisionMissionContainer";
 import WaveContainer from "@/components/home/Wave/WaveContainer";
+import ReviewContainer from "@/components/home/reviews/ReviewContainer";
 import Head from "next/head";
 
 export default function HomePage(): JSX.Element {
@@ -12,11 +13,12 @@ export default function HomePage(): JSX.Element {
         <title>Excellence Foundation</title>
         <meta name="Excellence foundation home page" />
       </Head>
-      <Navbar />
-      <TitleContainer />
+      {/* <Navbar /> */}
+      {/* <TitleContainer />
       <WaveContainer />
       <CourseContainer />
-      <VisionMissionContainer />
+      <VisionMissionContainer /> */}
+      <ReviewContainer />
     </>
   );
 }
