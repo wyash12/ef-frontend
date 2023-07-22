@@ -1,0 +1,43 @@
+.container {
+    position: relative;
+    height: 100vh;
+    
+    .company {
+        background: url(../../../public/placement_logos.png);
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 200%;
+        background-size: cover;
+        animation: slideshow 40s linear infinite;
+    }
+
+    .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 0 0rem;
+        // border-radius: 1rem;
+        text-align: center;
+
+        h1 {
+            color: #22405B;
+            font-size: 2.5rem;
+            font-weight: 600;
+            filter: drop-shadow(rgba(0, 0, 0, 0.15) 4px 4px 4px);
+            line-height: 1;
+        }
+    }
+}
+
+@keyframes slideshow {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}

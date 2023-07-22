@@ -1,6 +1,7 @@
 import Navbar from "@/components/common/Navbar";
 import CourseContainer from "@/components/home/Course/CourseContainer";
 import TitleContainer from "@/components/home/Landing/TitleContainer";
+import PlacementContainer from "@/components/home/Placement/PlacementContainer";
 import VisionMissionContainer from "@/components/home/VisionMission/VisionMissionContainer";
 import WaveContainer from "@/components/home/Wave/WaveContainer";
 import ReviewContainer from "@/components/home/reviews/ReviewContainer";
@@ -13,11 +14,12 @@ export default function HomePage(): JSX.Element {
         <title>Excellence Foundation</title>
         <meta name="Excellence foundation home page" />
       </Head>
-      {/* <Navbar /> */}
-      {/* <TitleContainer />
+      <Navbar />
+      <TitleContainer />
       <WaveContainer />
       <CourseContainer />
-      <VisionMissionContainer /> */}
+      <VisionMissionContainer />
+      <PlacementContainer />
       <ReviewContainer />
     </>
   );
