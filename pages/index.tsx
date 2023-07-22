@@ -1,3 +1,4 @@
+import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
 import CourseContainer from "@/components/home/Course/CourseContainer";
 import TitleContainer from "@/components/home/Landing/TitleContainer";
@@ -14,7 +15,6 @@ export default function HomePage(): JSX.Element {
         <title>Excellence Foundation</title>
         <meta name="Excellence foundation home page" />
       </Head>
-      <Navbar />
       <TitleContainer />
       <WaveContainer />
       <CourseContainer />
