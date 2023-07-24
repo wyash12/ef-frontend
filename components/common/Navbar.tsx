@@ -91,7 +91,7 @@ export default function Navbar(): JSX.Element {
           <Link href="/home">Login</Link>
         </li>
         <li>
-          <Link href="/home">Gallery</Link>
+          <Link href="/gallery">Gallery</Link>
         </li>
         <li>
           <Button
