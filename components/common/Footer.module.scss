@@ -3,6 +3,7 @@
   padding: 4rem;
   justify-content: space-between;
   // background-color: blue;
+  font-family: Poppins;
 
   .subContainer {
     display: flex;
@@ -18,10 +19,28 @@
         padding-bottom: 6px;
       }
     }
+
+    h2 {
+      color: #22405b;
+      font-size: 1.875rem;
+      line-height: 2.6875rem; /* 143.333% */
+      font-weight: 500;
+    }
   }
 
   .subContainer1 {
     width: 30%;
+
+    h3 {
+      color: #22415a;
+      font-size: 1.25rem;
+      line-height: 2.6875rem; /* 215% */
+      font-weight: 500;
+    }
+
+    img {
+      margin-left: -2rem;
+    }
   }
 
   .subContainer2 {
@@ -99,9 +118,245 @@
   background-color: #22405b;
   color: white;
   padding: 1rem;
+  text-align: center;
 
   p {
     font-weight: 300;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 1068px) {
+  .container {
+    padding: 2rem;
+
+    .subContainer {
+      gap: 1rem;
+
+      ul {
+        padding-left: 1rem;
+
+        li {
+          padding-bottom: 6px;
+        }
+      }
+    }
+
+    .subContainer1 {
+      width: 20%;
+
+      img {
+        height: 4rem;
+        width: auto;
+        margin-left: -2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1068px) {
+  .subContainer1 {
+    width: 20%;
+  }
+
+  .subContainer2 {
+    width: 25%;
+  }
+
+  .subContainer3 {
+    width: 25%;
+  }
+
+  .subContainer4 {
+    width: 25%;
+  }
+}
+
+@media (max-width: 762px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    .subContainer1 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      h3 {
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+    .subContainer2 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      ul {
+        padding-left: 4rem;
+      }
+    }
+
+    .subContainer3 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .wrapperTouchContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .touchContainer {
+          width: 50%;
+          padding-left: 5rem;
+        }
+      }
+    }
+
+    .subContainer4 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 666px) {
+  .container {
+    .subContainer3 {
+      .wrapperTouchContainer {
+        .touchContainer {
+          padding-left: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .container {
+    .subContainer3 {
+      .wrapperTouchContainer {
+        .touchContainer {
+          padding-left: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    .subContainer3 {
+      .wrapperTouchContainer {
+        .touchContainer {
+          padding-left: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    .subContainer {
+      h2 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+    }
+    .subContainer3 {
+      .wrapperTouchContainer {
+        .touchContainer {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .container {
+    .subContainer3 {
+      .wrapperTouchContainer {
+        .touchContainer {
+          padding-left: 0rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    .subContainer3 {
+      .wrapperTouchContainer {
+        .touchContainer {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    .subContainer1 {
+      h3 {
+        line-height: 2rem;
+      }
+    }
+    .subContainer3 {
+      .wrapperTouchContainer {
+        .touchContainer {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    .subContainer2 {
+      ul {
+        padding-left: 2rem;
+      }
+    }
+    .subContainer3 {
+      .wrapperTouchContainer {
+        .touchContainer {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .container {
+    .subContainer {
+      h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+    .subContainer2 {
+      ul {
+        padding-left: 1rem;
+      }
+    }
+    .subContainer3 {
+      .wrapperTouchContainer {
+        .touchContainer {
+          width: 100%;
+        }
+      }
+    }
   }
 }

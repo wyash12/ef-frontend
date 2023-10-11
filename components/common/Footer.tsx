@@ -32,7 +32,7 @@ export default function Footer(): JSX.Element {
         </div>
         <div className={`${classes.subContainer3} ${classes.subContainer}`}>
           <h2>GET IN TOUCH</h2>
-          <div>
+          <div className={classes.wrapperTouchContainer}>
             <div className={classes.touchContainer}>
               <PiPhoneBold />
               <p>+91-8830135459</p>
