@@ -1,88 +1,131 @@
 @import "../../styles/config";
 
 .nav {
-    display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem 0 0.1rem;
-    font-family: $navbar-font-family;
-    color: $primary-color;
-    font-size: 1.1rem;
-    font-weight: 400;
-    z-index: 1000;
-    
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 0 0.1rem;
+  font-family: $navbar-font-family;
+  color: $primary-color;
+  font-size: 1.1rem;
+  font-weight: 400;
+  z-index: 1000;
 
-    .logo {
-        width: 14rem;
-        height: auto;
-    
-        img {
-            height: 100%;
-            width: 100%;
-        }
+  .logo {
+    width: 14rem;
+    height: auto;
+
+    img {
+      height: 100%;
+      width: 100%;
     }
+  }
 
-    ul {
+  ul {
+    display: flex;
+    gap: 2.5rem;
+
+    li {
+      list-style: none;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+      }
+
+      ul {
+        margin-top: 2rem;
+        flex-direction: column;
+        position: absolute;
+        gap: 0.5rem;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        padding: 1rem;
+        width: 10rem;
         display: flex;
-        gap: 2.5rem;
+        top: 0;
+        z-index: 1001;
+
+        li:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
 
         li {
-            list-style: none;
-            position: relative;
-
-            a {
-                text-decoration: none;
-                color: $primary-color;
-            }
-
-            ul {
-                margin-top: 2rem;
-                flex-direction: column;
-                position: absolute;
-                gap: 0.5rem;
-                border-radius: 10px;
-                background: #FFF;
-                box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
-                padding: 1rem;
-                width: 10rem;
-                display: flex;
-                top: 0;
-                z-index: 1001;
-
-                li:last-child {
-                    border: none;
-                    padding-bottom: 0;
-                }
-                
-                li {
-                    padding-bottom: 0.5rem;
-                    border-bottom: 2px solid #0E9FC8;
-                    text-align: center;
-                }
-
-            }
+          padding-bottom: 0.5rem;
+          border-bottom: 2px solid #0e9fc8;
+          text-align: center;
         }
+      }
     }
+  }
+}
+
+.subContainer2 {
+  display: none;
+  flex-direction: column;
+  position: relative;
+
+  .appBar {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    .hamburgerIcon {
+      font-weight: 500;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 3rem;
+    color: white;
+    width: 240px;
+    border-radius: 0rem 1.25rem 1.25rem 0rem;
+    height: calc(100vh - 3rem);
+    background: linear-gradient(177deg, #22405b 0%, #0f9ec8 114.6%);
+    font-weight: 400;
+    overflow: scroll;
+  }
 }
 
 @media (max-width: 948px) {
-    .nav {
-        padding: 1rem 1rem 0 0.1rem;
-        font-size: 1rem;
-        
-        ul {
-            gap: 2rem;
-        }
+  .nav {
+    padding: 1rem 1rem 0 0.1rem;
+    font-size: 1rem;
+
+    ul {
+      gap: 2rem;
     }
+  }
 }
 
 @media (max-width: 840px) {
-    .nav {
-        padding: 1rem 1rem 0 0.1rem;
-        
-        ul {
-            gap: 1rem;
-        }
+  .nav {
+    padding: 1rem 1rem 0 0.1rem;
+
+    ul {
+      gap: 1rem;
     }
+  }
+}
+
+@media (max-width: 786px) {
+  .subContainer1 {
+    display: none;
+  }
+
+  .subContainer2 {
+    display: flex;
+  }
 }
