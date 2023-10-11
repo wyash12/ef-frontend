@@ -1,6 +1,7 @@
-import Footer from "@/components/common/Footer";
-import Navbar from "@/components/common/Navbar";
+// import Footer from "@/components/common/Footer";
+// import Navbar from "@/components/common/Navbar";
 import CourseContainer from "@/components/home/Course/CourseContainer";
+import PathContainer from "@/components/home/Features/Path";
 import TitleContainer from "@/components/home/Landing/TitleContainer";
 import PlacementContainer from "@/components/home/Placement/PlacementContainer";
 import VisionMissionContainer from "@/components/home/VisionMission/VisionMissionContainer";
@@ -21,6 +22,7 @@ export default function HomePage(): JSX.Element {
       <VisionMissionContainer />
       <PlacementContainer />
       <ReviewContainer />
+      <PathContainer />
     </>
   );
 }

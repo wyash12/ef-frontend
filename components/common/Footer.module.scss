@@ -1,95 +1,107 @@
 .container {
+  display: flex;
+  padding: 4rem;
+  justify-content: space-between;
+  // background-color: blue;
+
+  .subContainer {
     display: flex;
-    padding: 4rem; 
-    justify-content: space-between;
-    // background-color: blue;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 0 0.5rem;
 
-    .subContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: flex-start;
-        padding: 0 0.5rem;
-        
-        ul {
-            padding-left: 1rem;
+    ul {
+      padding-left: 1rem;
 
-            li {
-                padding-bottom: 6px;
-            }
-        }
+      li {
+        padding-bottom: 6px;
+      }
     }
+  }
 
-    .subContainer1 {
-        width: 30%;
+  .subContainer1 {
+    width: 30%;
+  }
+
+  .subContainer2 {
+    width: 20%;
+  }
+
+  .subContainer3 {
+    width: 20%;
+
+    .touchContainer {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding-bottom: 6px;
     }
+  }
 
-    .subContainer2 {
-        width: 20%;
-    }
-
-    .subContainer3 {
-        width: 20%;
-
-        .touchContainer {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            padding-bottom: 6px;
-        }
-    }
-    
-    .subContainer4 {
-        width: 20%;
-    }
-
+  .subContainer4 {
+    width: 20%;
+  }
 }
 
 .social {
-    display: flex;
-    gap: 1rem;
-    padding-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 .icons {
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
 }
 
 .icons1 {
-    color: #CE2873;
-    box-shadow: #CE2873 0px 6px 10px 2px;
+  color: #ce2873;
+  // box-shadow: #CE2873 0px 6px 10px 2px;
+}
+
+.icons1 :hover {
+  box-shadow: #ce2873 0px 0px 10px 2px;
 }
 
 .icons2 {
-    color: #1B8AB5;
-    box-shadow: #1B8AB5 0px 6px 10px 2px;   
+  color: #1b8ab5;
+}
+
+.icons2 :hover {
+  box-shadow: #1b8ab5 0px 0px 10px 2px;
 }
 
 .icons3 {
-    color: #46C357;
-    box-shadow: #46C357 0px 6px 10px 2px;   
+  color: #46c357;
+}
+
+.icons3 :hover {
+  box-shadow: #46c357 0px 0px 10px 2px;
 }
 
 .icons4 {
-    color: #0176B5;
-    box-shadow: #0176B5 0px 6px 10px 2px;   
+  color: #0176b5;
+}
+
+.icons4 :hover {
+  box-shadow: #0176b5 0px 0px 10px 2px;
 }
 
 .copyrightContainer {
-    width: 100%;
-    display: grid;
-    place-items: center;
-    background-color: #22405B;
-    color: white;
-    padding: 1rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #22405b;
+  color: white;
+  padding: 1rem;
 
-    p {
-        font-weight: 300;
-        font-size: 1rem;
-    }
+  p {
+    font-weight: 300;
+    font-size: 1rem;
+  }
 }
