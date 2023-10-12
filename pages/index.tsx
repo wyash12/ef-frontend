@@ -20,9 +20,9 @@ export default function HomePage(): JSX.Element {
       {/* <WaveContainer /> */}
       {/* <CourseContainer /> */}
       {/* <VisionMissionContainer /> */}
-      <PlacementContainer />
+      {/* <PlacementContainer /> */}
       {/* <ReviewContainer /> */}
-      {/* <PathContainer /> */}
+      <PathContainer />
     </>
   );
 }
