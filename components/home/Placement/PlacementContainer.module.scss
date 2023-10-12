@@ -1,6 +1,7 @@
 .container {
     position: relative;
     height: 100vh;
+    overflow-x: hidden;
     
     .company {
         background: url(../../../public/placement_logos.png);
@@ -39,5 +40,29 @@
     }
     100% {
         left: -100%;
+    }
+}
+
+@media (max-width: 1120px) {
+    .container {   
+        .title {
+            padding: 1.5rem 1.5rem;
+    
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 631px) {
+    .container {   
+        .title {
+            padding: 1rem 1rem;
+    
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
     }
 }

@@ -19,8 +19,8 @@ export default function HomePage(): JSX.Element {
       {/* <TitleContainer /> */}
       {/* <WaveContainer /> */}
       {/* <CourseContainer /> */}
-      <VisionMissionContainer />
-      {/* <PlacementContainer /> */}
+      {/* <VisionMissionContainer /> */}
+      <PlacementContainer />
       {/* <ReviewContainer /> */}
       {/* <PathContainer /> */}
     </>
