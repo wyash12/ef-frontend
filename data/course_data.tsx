@@ -24,27 +24,27 @@ export let CourseData: Array<CourseElementType> = [
     courseImg: courseImg,
   },
   {
-    title: "Skill Booster",
+    title: "Professional Billing Course",
     subTitle: "Signature Program",
-    days: 30,
+    days: 15,
     features: [
       "100%  Placement Assistance.",
       "Off-site & On-Site Training.",
       "Business Skills.",
     ],
-    path: "/course/skill-booster",
+    path: "/course/professional-billing-course",
     courseImg: courseImg,
   },
   {
-    title: "Skill Booster",
+    title: "Professional Estimation & Costing Training Program",
     subTitle: "Signature Program",
-    days: 30,
+    days: 15,
     features: [
       "100%  Placement Assistance.",
       "Off-site & On-Site Training.",
       "Business Skills.",
     ],
-    path: "/course/skill-booster",
+    path: "/course/professional-estimation-costing-tringing-program",
     courseImg: courseImg,
   },
 ];

@@ -1,60 +1,254 @@
 .container {
-    display: flex;
-    width: 55%;
-    border: 2px solid #0F9EC8;
-    // padding: 1rem;
-    border-radius: 1rem;
-    margin-left: 2.5rem;
+  display: flex;
+  width: 55%;
+  border: 2px solid #0f9ec8;
+  // padding: 1rem;
+  border-radius: 1rem;
+  margin-left: 2.5rem;
 
-    .img {
-        width: 30%;
-        // height: 100%;
-        position: relative;
+  .img {
+    width: 25%;
+    // height: 100%;
+    position: relative;
 
-        img {
-            position: absolute;
-            width: 100%;
-            height: auto;
-            left: -50%;
-            top: -1%;
-        }
+    img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      left: -50%;
+      top: -1%;
     }
+  }
+
+  .wrapper {
+    display: flex;
+    width: 75%;
+    margin-left: -4rem;
 
     .details {
-        margin-left: -4rem;
-        padding: 1rem 0;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
+      padding: 1rem 0;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
 
-        h2 {
-            font-size: 1.5rem;
-            color: #22405B;
-            font-weight: 600;
+      h2 {
+        font-size: 1.5rem;
+        color: #22405b;
+        font-weight: 600;
+      }
+
+      p {
+        color: #0f9ec8;
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+
+      .period {
+        font-size: 1rem;
+      }
+
+      ul {
+        padding-left: 1.8rem;
+
+        li {
+          font-size: 1.1rem;
         }
-
-        p {
-            color: #0F9EC8;
-            font-size: 0.8rem;
-            font-weight: 400;
-        }
-
-        ul {
-            padding-left: 1.8rem;
-
-            li {
-                font-size: 1rem;
-            }
-        }
+      }
     }
 
     .explore {
-        width: 25%;
-        padding-bottom: 1rem;
-        padding-right: 1rem;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
+      width: 40%;
+      padding-bottom: 1rem;
+      padding-right: 1rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      button {
+        border-radius: 0.9375rem;
+        background: linear-gradient(94deg, #0f9ec8 0%, #22405b 134.17%);
+        border: none;
+        color: white;
+        padding: 0.5rem 1.8rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1581px) {
+    .container {
+        .img {
+            width: 30%;
+        }
     }
 }
+
+@media (max-width: 1224px) {
+  .container {
+    width: 60%;
+
+    .img {
+        width: 30%;
+    }
+  }
+}
+
+@media (max-width: 1154px) {
+  .container {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1068px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 930px) {
+  .container {
+    margin-left: 5rem;
+
+    .wrapper {
+      .explore {
+        padding-bottom: 1rem;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 858px) {
+  .container {
+    width: 60%;
+    margin-left: 2.5rem;
+
+    .img {
+      width: 40%;
+
+      img {
+        left: -45%;
+        top: -20%;
+      }
+    }
+
+    .wrapper {
+      width: 75%;
+      margin-left: -4rem;
+      flex-direction: column;
+
+      .details {
+        width: 100%;
+      }
+
+      .explore {
+        width: 100%;
+        align-self: flex-end;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+
+        button {
+            padding: 0.4rem 1.8rem;
+            font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 658px) {
+  .container {
+    width: 70%;
+
+    .wrapper {
+      .explore {
+        button {
+          padding: 0.4rem 1.6rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 558px) {
+  .container {
+    .img {
+      width: 50%;
+    }
+
+    .wrapper {
+      padding-left: 0.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 485px) {
+  .container {
+    .wrapper {
+      padding-left: 0.5rem;
+      padding-right: 0.6rem;
+
+      .details {
+        h2 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.7rem;
+        }
+
+        .period {
+          font-size: 0.8rem;
+        }
+
+        ul {
+          li {
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .explore {
+        button {
+          padding: 0.2rem 1.2rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 352px) {
+  .container {
+    .wrapper {
+        padding-left: 12px;
+      .explore {
+        button {
+          padding: 0.2rem 0.8rem;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+    .container {
+        .img {
+            img {
+                top: -15%;
+            }
+        }
+    }
+  }
+  

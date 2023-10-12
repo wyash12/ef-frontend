@@ -17,8 +17,8 @@ export default function HomePage(): JSX.Element {
         <meta name="Excellence foundation home page" />
       </Head>
       {/* <TitleContainer /> */}
-      <WaveContainer />
-      {/* <CourseContainer /> */}
+      {/* <WaveContainer /> */}
+      <CourseContainer />
       {/* <VisionMissionContainer /> */}
       {/* <PlacementContainer /> */}
       {/* <ReviewContainer /> */}
