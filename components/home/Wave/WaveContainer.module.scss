@@ -2,6 +2,7 @@
   height: 60vh;
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 
   .wave {
     background: url(../../../public/wave.png) repeat-x; 
@@ -17,7 +18,7 @@
   .values {
     // z-index: 100;
     position: absolute;
-    height: 50vh;
+    height: 45vh;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -53,5 +54,44 @@
   }
   100% {
     margin-left: -1600px;
+  }
+}
+
+@media (max-width: 774px) {
+  .ocean { 
+    .values {
+      h1 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .ocean { 
+    .values {
+      h1 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .ocean { 
+    height: 70vh;
+
+    .values {  
+      h1 {
+        text-align: center;
+        padding: 0 0.3rem;
+      }
+      .counterDiv {
+        padding: 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+      } 
+  
+    }
   }
 }

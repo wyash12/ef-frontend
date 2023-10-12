@@ -21,3 +21,30 @@
         }
     }
 }
+
+@media (max-width: 774px) {
+    .container {
+        .subContainer {
+            h1 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+  }
+
+  
+@media (max-width: 468px) {
+    .container {
+        .subContainer {
+            h1 {
+                font-size: 1.1rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+  }
