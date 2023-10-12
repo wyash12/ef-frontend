@@ -17,12 +17,12 @@ export default function HomePage(): JSX.Element {
         <meta name="Excellence foundation home page" />
       </Head>
       <TitleContainer />
-      <WaveContainer />
+      {/* <WaveContainer />
       <CourseContainer />
       <VisionMissionContainer />
       <PlacementContainer />
       <ReviewContainer />
-      <PathContainer />
+      <PathContainer /> */}
     </>
   );
 }

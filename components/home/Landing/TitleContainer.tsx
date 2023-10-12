@@ -1,7 +1,7 @@
 import Image from "next/image";
 import classes from "./TitleContainer.module.scss";
 import titleContainerImage from "../../../public/title_container.png";
-import Button from "../../common/Button";
+// import Button from "../../common/Button";
 import TypewriterComponent from "typewriter-effect";
 
 export default function TitleContainer(): JSX.Element {
@@ -23,12 +23,13 @@ export default function TitleContainer(): JSX.Element {
               }}
             />
           </div>
-          <Button
+          {/* <Button
             onClick={() => {}}
             text="Explore >"
             padding="0.6rem 4rem"
             fontSize={1.1}
-          />
+          /> */}
+          <button>Explore &gt;</button>
         </div>
       </div>
       <div className={classes.imageContainer}>
