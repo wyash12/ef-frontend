@@ -33,3 +33,29 @@
     }
   }
 }
+
+@media (max-width: 1185px) {
+  .container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1185px) {
+  .container {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+    .container {
+      h1 {
+        font-size: 1.6rem;
+      }
+  
+      .subContainer {
+        h2 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
