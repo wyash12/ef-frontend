@@ -1,0 +1,35 @@
+.container {
+  color: #22405b;
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .subContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+}
