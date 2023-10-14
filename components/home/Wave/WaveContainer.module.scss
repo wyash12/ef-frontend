@@ -18,13 +18,15 @@
   .values {
     // z-index: 100;
     position: absolute;
-    height: 45vh;
-    bottom: 0;
+    height: 50vh;
+    bottom: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 2rem;
     color: white;
 
     h1 {
@@ -57,9 +59,42 @@
   }
 }
 
+@media (max-width: 2210px) {
+  .ocean {
+    height: 60vh;
+    .values{
+      height: 30vh;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .ocean {
+    height: 52vh;
+    .values{
+      height: 30vh;
+    }
+  }
+}
+
+
+@media (max-width: 920px) {
+  .ocean { 
+    height: 30vh;
+    .values {
+      height: 40vh;
+      h1 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 774px) {
   .ocean { 
+    height: 40vh;
     .values {
+      height: 30vh;
       h1 {
         font-size: 1.4rem;
       }
@@ -69,19 +104,22 @@
 
 @media (max-width: 468px) {
   .ocean { 
+    height: 35vh;
     .values {
+      height: 25vh;
       h1 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
     }
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 380px) {
   .ocean { 
-    height: 70vh;
+    height: 60vh;
 
     .values {  
+      height: 45vh;
       h1 {
         text-align: center;
         padding: 0 0.3rem;
@@ -95,3 +133,25 @@
     }
   }
 }
+
+@media (max-width: 281px) {
+  .ocean { 
+    height: 70vh;
+
+    .values {  
+      height: 40vh;
+      h1 {
+        text-align: center;
+        padding: 0 0.3rem;
+      }
+      .counterDiv {
+        padding: 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+      } 
+  
+    }
+  }
+}
+
+
