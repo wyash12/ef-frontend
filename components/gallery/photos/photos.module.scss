@@ -1,0 +1,62 @@
+.container {
+  color: #22405b;
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+
+    .img {
+        width: 30%;
+
+        img {
+            width: 100%;
+            height: auto;            
+        }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .container {
+    gap: 1.5rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .imageContainer {
+      gap: 1rem;
+
+      .img {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    gap: 1rem;
+
+    h1 {
+      font-size: 1.2rem;
+    }
+ }
+}
