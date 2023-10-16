@@ -1,12 +1,12 @@
-import { VisionMissionType } from "@/data/vision_mission_data";
 import classes from "./VisionMissionElement.module.scss";
 import Image from "next/image";
 import { Slide } from "react-awesome-reveal";
+import VisionMissionModel from "@/models/VisionMissionModel";
 
 export default function VisionMissionElement({
   data,
 }: {
-  data: VisionMissionType;
+  data: VisionMissionModel;
 }): JSX.Element {
   return (
     <div className={classes.container}>

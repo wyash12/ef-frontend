@@ -10,11 +10,11 @@ export default function PhotosVideoPage(): JSX.Element {
 
   const pageData = GalleryData.find((element) => element.path === photosId);
 
-  // useEffect(() => {
-  //   if (pageData === undefined) {
-  //     router.replace("/gallery");
-  //   }
-  // }, [pageData, router]);
+  useEffect(() => {
+    if (pageData === undefined) {
+      router.replace("/gallery");
+    }
+  }, [pageData, router]);
 
   if (pageData && pageData.id !== "g3") {
     return <PhotoScreen data={pageData} />;

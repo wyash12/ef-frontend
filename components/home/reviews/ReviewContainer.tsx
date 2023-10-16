@@ -1,9 +1,10 @@
-import { ReviewData, ReviewType } from "@/data/review_data";
+import { ReviewData } from "@/data/review_data";
 import classes from "./ReviewContainer.module.scss";
 import ReviewElement from "./ReviewElement";
 import Carousel from "react-material-ui-carousel";
 import Button from "@/components/common/Button";
 import { useRouter } from "next/router";
+import ReviewModel from "@/models/ReviewModel";
 
 export default function ReviewContainer(): JSX.Element {
   const router = useRouter();
@@ -21,7 +22,7 @@ export default function ReviewContainer(): JSX.Element {
             },
           }}
         >
-          {ReviewData.map((element: ReviewType, index) => (
+          {ReviewData.map((element: ReviewModel, index) => (
             <ReviewElement data={element} key={index} />
           ))}
         </Carousel>

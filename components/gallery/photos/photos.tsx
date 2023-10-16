@@ -1,11 +1,11 @@
-import { GalleryElementType } from "@/data/gallery_data";
 import classes from "./Photos.module.scss";
 import Image from "next/image";
+import GalleryElementModel from "@/models/GalleryElementModel";
 
 export default function PhotoScreen({
   data,
 }: {
-  data: GalleryElementType;
+  data: GalleryElementModel;
 }): JSX.Element {
   return (
     <div className={classes.container}>

@@ -1,14 +1,13 @@
-import { CourseElementType } from "@/data/course_data";
 import classes from "./CourseElement.module.scss";
-import Button from "@/components/common/Button";
 import { useRouter } from "next/router";
 import { MdOutlineWatchLater } from "react-icons/md";
 import Image from "next/image";
+import CourseElementModel from "@/models/CourseElementModel";
 
 export default function CourseElement({
   data,
 }: {
-  data: CourseElementType;
+  data: CourseElementModel;
 }): JSX.Element {
   const router = useRouter();
 

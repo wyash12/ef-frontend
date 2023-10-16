@@ -2,7 +2,6 @@ import CounterElement from "./CounterElement";
 import classes from "./WaveContainer.module.scss";
 import { FaHeart } from "react-icons/fa";
 import { CounterData } from "@/data/counter_data";
-import { JsxElement } from "typescript";
 
 export default function WaveContainer(): JSX.Element {
   return (

@@ -1,15 +1,9 @@
-import { StaticImageData } from "next/image";
 import visionImg from "../public/vision.png";
 import missionImg from "../public/mission.png";
 import uspImg from "../public/usp.png";
+import VisionMissionModel from "@/models/VisionMissionModel";
 
-export interface VisionMissionType {
-  title: string;
-  description: string;
-  image: StaticImageData;
-}
-
-export let VisionMissionData: Array<VisionMissionType> = [
+export let VisionMissionData: Array<VisionMissionModel> = [
   {
     title: "Vision",
     description:

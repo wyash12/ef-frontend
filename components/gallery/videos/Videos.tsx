@@ -1,11 +1,11 @@
-import { GalleryElementType } from "@/data/gallery_data";
 import classes from "./Videos.module.scss";
 import ReactPlayer from "react-player/lazy";
+import GalleryElementModel from "@/models/GalleryElementModel";
 
 export default function VideoScreen({
   data,
 }: {
-  data: GalleryElementType;
+  data: GalleryElementModel;
 }): JSX.Element {
   return (
     <div className={classes.container}>

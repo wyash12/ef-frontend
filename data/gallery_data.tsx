@@ -1,16 +1,6 @@
-export interface ImageVideoPathType {
-  id: string;
-  path: string;
-}
+import GalleryElementModel from "@/models/GalleryElementModel";
 
-export interface GalleryElementType {
-  id: string;
-  title: string;
-  path: string;
-  data: Array<ImageVideoPathType>;
-}
-
-export let GalleryData: Array<GalleryElementType> = [
+export let GalleryData: Array<GalleryElementModel> = [
   {
     id: "g1",
     title: "Placed Students",

@@ -1,14 +1,7 @@
-import { StaticImageData } from "next/image";
 import reviewImage from "../public/review.png";
+import ReviewModel from "@/models/ReviewModel";
 
-export interface ReviewType {
-  name: string;
-  star: number;
-  review: string;
-  img: StaticImageData | string;
-}
-
-export let ReviewData: Array<ReviewType> = [
+export let ReviewData: Array<ReviewModel> = [
   {
     name: "Hrishikesh Wagh",
     review:

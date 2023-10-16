@@ -1,16 +1,7 @@
-import { StaticImageData } from "next/image";
 import courseImg from "../public/course.png";
+import CourseElementModel from "@/models/CourseElementModel";
 
-export interface CourseElementType {
-  title: string;
-  subTitle: string;
-  days: number;
-  path: string;
-  features: Array<string>;
-  courseImg: StaticImageData;
-}
-
-export let CourseData: Array<CourseElementType> = [
+export let CourseData: Array<CourseElementModel> = [
   {
     title: "Skill Booster",
     subTitle: "Signature Program",

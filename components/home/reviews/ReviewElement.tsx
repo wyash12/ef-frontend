@@ -1,13 +1,13 @@
 import classes from "./ReviewElement.module.scss";
 import { FcGoogle } from "react-icons/fc";
 import { BsStarFill } from "react-icons/bs";
-import { ReviewType } from "@/data/review_data";
 import Image from "next/image";
+import ReviewModel from "@/models/ReviewModel";
 
 export default function ReviewElement({
   data,
 }: {
-  data: ReviewType;
+  data: ReviewModel;
 }): JSX.Element {
   let starContent: Array<JSX.Element> = [];
   for (let i = 0; i < data.star; i++) {

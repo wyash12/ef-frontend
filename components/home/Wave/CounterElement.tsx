@@ -3,12 +3,12 @@ import classes from "./CounterElement.module.scss";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import { Bounce } from "react-awesome-reveal";
-import { CounterElementType } from "@/data/counter_data";
+import CounterElementModel from "@/models/CounterElementModel";
 
 export default function CounterElement({
   data,
 }: {
-  data: CounterElementType;
+  data: CounterElementModel;
 }): JSX.Element {
   const { ref: counterRef, inView: counterInView } = useInView();
   const [isInit, setIsInit] = useState(true);
