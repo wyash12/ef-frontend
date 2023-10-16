@@ -1,8 +1,8 @@
 import { GalleryElementType } from "@/data/gallery_data";
-import classes from "./photos.module.scss";
+import classes from "./Photos.module.scss";
 import Image from "next/image";
 
-export default function Photos({
+export default function PhotoScreen({
   data,
 }: {
   data: GalleryElementType;

@@ -1,8 +1,8 @@
 import { GalleryData } from "@/data/gallery_data";
 import { NextRouter, useRouter } from "next/router";
 import { useEffect } from "react";
-import Image from "next/image";
-import Photos from "@/components/gallery/photos/photos";
+import PhotoScreen from "@/components/gallery/photos/Photos";
+import VideoScreen from "@/components/gallery/videos/videos";
 
 export default function PhotosVideoPage(): JSX.Element {
   const router: NextRouter = useRouter();
@@ -16,9 +16,17 @@ export default function PhotosVideoPage(): JSX.Element {
   //   }
   // }, [pageData, router]);
 
-  if (pageData) {
-    return <Photos data={pageData} />;
+  if (pageData && pageData.id !== "g3") {
+    return <PhotoScreen data={pageData} />;
   }
 
-  return <p>Something went wrong. Please try again later</p>;
+  if (pageData && pageData.id === "g3") {
+    return <VideoScreen data={pageData} />;
+  }
+
+  return (
+    <p style={{ textAlign: "center" }}>
+      Something went wrong. Please try again later
+    </p>
+  );
 }
