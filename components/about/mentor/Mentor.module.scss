@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: Poppins;
+  background: url(../../../public/mentor_wave.png) no-repeat;
+  background-size: contain;
+
+  h1 {
+    color: #22405b;
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.6875rem; /* 71.667% */
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+  img {
+    width: 20rem;
+    height: auto;
+    background: transparent;
+  }
+
+  p {
+    width: 75%;
+    text-align: justify;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    h1 {
+      font-size: 2rem;
+    }
+
+    img {
+      width: 16rem;
+    }
+  }
+}
+
+@media (max-width: 455px) {
+  .container {
+    gap: 1rem;
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    img {
+      width: 12rem;
+    }
+  }
+}

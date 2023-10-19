@@ -157,10 +157,10 @@ export default function Navbar(): JSX.Element {
                 }}
               >
                 <li>
-                  <Link href="/home">Excellence Foundation</Link>
+                  <Link href="/about/excellence_foundation">Excellence Foundation</Link>
                 </li>
                 <li>
-                  <Link href="/home">Mentor</Link>
+                  <Link href="/about/mentor">Mentor</Link>
                 </li>
               </ul>
             </li>
