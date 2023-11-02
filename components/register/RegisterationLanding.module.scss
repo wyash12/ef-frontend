@@ -30,3 +30,13 @@
     background-color: #fff;
   }
 }
+@media only screen and (max-width: 500px) {
+  .container {
+    .left {
+      width: 0%;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+}

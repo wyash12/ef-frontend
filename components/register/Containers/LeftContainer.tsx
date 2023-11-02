@@ -6,7 +6,8 @@ import classes from "@/components/register/Containers/LeftCont.module.scss";
 export default function LeftContainer() {
   return (
     <>
-      <Image src={reg1} alt="" />
+      <Image src={reg1} alt="" className={classes.imgClass} />
+
       <p className={classes.text1}>
         Enhance your personal and professional skills to derive a hassle-free
         career growth!

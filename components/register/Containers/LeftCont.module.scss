@@ -4,3 +4,21 @@
   width: 370px;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .imgClass {
+    width: 400px;
+    height: 300px;
+    margin-top: -10px;
+  }
+  .text1 {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .imgClass {
+    width: 0px;
+  }
+  .text1 {
+    width: 0px;
+  }
+}

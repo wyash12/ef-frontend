@@ -58,7 +58,7 @@ export default function RightContainer() {
               <span className={classes.spanClass}>*</span>
             </label>
 
-            <input type="text" className={classes.inputBox} />
+            <input type="date" className={classes.inputBox} />
             <Image src={Insert_Table} alt="" className={classes.imgClass} />
           </div>
           <div className={classes.wappDiv}>
