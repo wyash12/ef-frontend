@@ -83,7 +83,7 @@ export default function Navbar(): JSX.Element {
   const [isHamburgerMenu, setIsHamburgerMenu] = useState<boolean>(false);
 
   function onClickRegisterHandler(): void {
-    router.push("/home");
+    router.push("/register");
   }
 
   function onMouseHoverEvent(value: number): void {
@@ -157,7 +157,9 @@ export default function Navbar(): JSX.Element {
                 }}
               >
                 <li>
-                  <Link href="/about/excellence_foundation">Excellence Foundation</Link>
+                  <Link href="/about/excellence_foundation">
+                    Excellence Foundation
+                  </Link>
                 </li>
                 <li>
                   <Link href="/about/mentor">Mentor</Link>
