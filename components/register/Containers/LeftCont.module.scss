@@ -4,6 +4,12 @@
   width: 370px;
   text-align: center;
 }
+
+.imgClass {
+  width: 85%;
+  height: auto;
+}
+
 @media only screen and (max-width: 768px) {
   .imgClass {
     width: 400px;
