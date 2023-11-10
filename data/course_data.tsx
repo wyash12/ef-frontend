@@ -339,7 +339,7 @@ export let CourseData: Array<CourseElementModel> = [
       "Off-site & On-Site Training.",
       "Business Skills.",
     ],
-    path: "/course/professional-estimation-costing-tringing-program",
+    path: "/course/professional-estimation-and-costing-tringing-program",
     courseImg: courseImg,
     next_program_date: "1st June",
     training_mode: TrainingMode.Offline,

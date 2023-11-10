@@ -132,13 +132,17 @@ export default function Navbar(): JSX.Element {
                 }}
               >
                 <li>
-                  <Link href="/home">Skill Booster</Link>
+                  <Link href="/course/skill-booster">Skill Booster</Link>
                 </li>
                 <li>
-                  <Link href="/home">Online estimation and costing</Link>
+                  <Link href="/course/professional-estimation-and-costing-tringing-program">
+                    Online estimation and costing
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/home">Archi - norm</Link>
+                  <Link href="/course/professional-billing-course">
+                    Professional billing course
+                  </Link>
                 </li>
               </ul>
             </li>
