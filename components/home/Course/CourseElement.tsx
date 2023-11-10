@@ -12,7 +12,12 @@ export default function CourseElement({
   const router = useRouter();
 
   return (
-    <div className={classes.container}>
+    <div
+      className={classes.container}
+      onClick={() => {
+        router.push(data.path);
+      }}
+    >
       <div className={classes.img}>
         <Image src={data.courseImg} alt={data.title} />
       </div>

@@ -9,7 +9,7 @@ export default function CourseContainer(): JSX.Element {
       <h1>Internship training courses </h1>
       <div className={classes.courseContainer}>
         {CourseData.map((element: CourseElementModel, index) => {
-          return <CourseElement key={index} data={element} />;
+          return <CourseElement key={element.id} data={element} />;
         })}
       </div>
     </div>
