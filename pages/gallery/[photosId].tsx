@@ -1,8 +1,10 @@
+import PhotosScreen from "@/components/gallery/photos/Photos";
+import VideosScreen from "@/components/gallery/videos/Videos";
 import { GalleryData } from "@/data/gallery_data";
 import { NextRouter, useRouter } from "next/router";
 import { useEffect } from "react";
-import VideoScreen from "@/components/gallery/videos/Videos";
-import PhotoScreen from "@/components/gallery/photos/Photos";
+// import VideoScreen from "@/components/gallery/videos/Videos";
+// import PhotoScreen from "@/components/gallery/photos/Photos";
 
 export default function PhotosVideoPage(): JSX.Element {
   const router: NextRouter = useRouter();
@@ -17,11 +19,13 @@ export default function PhotosVideoPage(): JSX.Element {
   }, [pageData, router]);
 
   if (pageData && pageData.id !== "g3") {
-    return <PhotoScreen data={pageData} />;
+    // return <PhotoScreen data={pageData} />;
+    return <PhotosScreen data={pageData} />;
   }
 
   if (pageData && pageData.id === "g3") {
-    return <VideoScreen data={pageData} />;
+    // return <VideoScreen data={pageData} />;
+    return <VideosScreen data={pageData} />;
   }
 
   return (

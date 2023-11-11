@@ -2,7 +2,7 @@ import { CourseData } from "@/data/course_data";
 import CourseElementModel from "@/models/CourseElementModel";
 import { NextRouter, useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import HomePage from "..";
+// import HomePage from "..";
 import AboutCourse from "@/components/course/AboutCourse";
 import CourseContentContainer from "@/components/course/CourseContent";
 

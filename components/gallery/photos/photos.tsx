@@ -1,8 +1,8 @@
+import GalleryElementModel from "@/models/GalleryElementModel";
 import classes from "./Photos.module.scss";
 import Image from "next/image";
-import GalleryElementModel from "@/models/GalleryElementModel";
 
-export default function PhotoScreen({
+export default function PhotosScreen({
   data,
 }: {
   data: GalleryElementModel;
