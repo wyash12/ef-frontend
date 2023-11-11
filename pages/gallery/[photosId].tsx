@@ -1,5 +1,5 @@
-import PhotosScreen from "@/components/gallery/photos/Photos";
-import VideosScreen from "@/components/gallery/videos/Videos";
+import PhotosScreen from "@/components/galleryScreen/photosScreen/Photos";
+import VideosScreen from "@/components/galleryScreen/videosScreen/Videos";
 import { GalleryData } from "@/data/gallery_data";
 import { NextRouter, useRouter } from "next/router";
 import { useEffect } from "react";
