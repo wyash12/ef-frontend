@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 3rem;
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+
+  .subContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .elementContainer {
+      border-radius: 0.4rem;
+      padding: 0.2rem 1rem;
+      background: linear-gradient(
+        0deg,
+        #0f9ec8 0%,
+        rgba(15, 158, 200, 0) 142.86%
+      );
+      cursor: pointer;
+
+      .elementSubContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1rem;
+
+        .title {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-size: 1.2rem;
+
+          h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .points {
+        .pointsContainer {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding-left: 2rem;
+        }
+
+        .elementContainer {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

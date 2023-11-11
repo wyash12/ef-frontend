@@ -4,6 +4,7 @@ import { NextRouter, useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import HomePage from "..";
 import AboutCourse from "@/components/course/AboutCourse";
+import CourseContentContainer from "@/components/course/CourseContent";
 
 export default function CoursePage(): JSX.Element {
   const router: NextRouter = useRouter();
@@ -25,9 +26,10 @@ export default function CoursePage(): JSX.Element {
     return (
       <>
         <AboutCourse data={foundCourseData.about_trining} />
+        <CourseContentContainer data={foundCourseData.course_content} />
       </>
     );
   }
 
-  return <p>Something went wrong! Please try again...</p>
+  return <p>Something went wrong! Please try again...</p>;
 }
