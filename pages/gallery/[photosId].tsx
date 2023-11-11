@@ -1,8 +1,8 @@
 import { GalleryData } from "@/data/gallery_data";
 import { NextRouter, useRouter } from "next/router";
 import { useEffect } from "react";
-import PhotoScreen from "@/components/gallery/photos/Photos";
 import VideoScreen from "@/components/gallery/videos/Videos";
+import PhotoScreen from "@/components/gallery/photos/Photos";
 
 export default function PhotosVideoPage(): JSX.Element {
   const router: NextRouter = useRouter();
