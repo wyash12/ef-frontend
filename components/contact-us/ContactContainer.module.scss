@@ -1,0 +1,102 @@
+.contactDiv {
+  background: linear-gradient(0deg, #0f9ec8 0%, #ffffff 122.97%);
+
+  width: 100%;
+  height: 60rem;
+  .headingDiv {
+    text-align: center;
+    font-weight: 600;
+    font-size: 60px;
+  }
+  .LnRcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .Left {
+      width: 54.6%;
+      margin-right: 0.4%;
+      height: 54.3rem;
+      display: flex;
+    }
+    .Right {
+      width: 45%;
+      height: 54.3rem;
+      display: flex;
+    }
+  }
+}
+
+@media only screen and (max-width: 1267px) {
+  .contactDiv {
+    .LnRcontainer {
+      .Left {
+        width: 50%;
+      }
+      .Right {
+        width: 45%;
+        height: 54.3rem;
+        display: flex;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contactDiv {
+    .LnRcontainer {
+      .Right {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .contactDiv {
+    .LnRcontainer {
+      .Left {
+        width: 100%;
+      }
+      .Right {
+        width: 0%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .contactDiv {
+    .headingDiv {
+      font-weight: 600;
+      font-size: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .contactDiv {
+    .headingDiv {
+      font-weight: 600;
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 275px) {
+  .contactDiv {
+    .headingDiv {
+      font-weight: 600;
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 210px) {
+  .contactDiv {
+    .headingDiv {
+      font-weight: 600;
+      font-size: 25px;
+    }
+  }
+}

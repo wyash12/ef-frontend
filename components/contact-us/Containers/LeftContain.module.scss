@@ -1,0 +1,164 @@
+.Formdiv {
+  margin-left: 1rem;
+  width: 100%;
+  display: flex;
+
+  //   justify-content: center;
+  //   align-items: center;
+  .Namediv {
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: large;
+    .Labeldiv {
+      margin-left: 0.5rem;
+    }
+    .spanClass {
+      color: red;
+    }
+    .inputDiv {
+      display: flex;
+      width: 100%;
+      height: 3rem;
+      border: 1px solid;
+      border-radius: 2rem;
+      border-image-source: linear-gradient(
+        90.72deg,
+        #22405b 2.52%,
+        #0f9ec8 98.21%
+      );
+    }
+  }
+  .Messagediv {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: large;
+    .Labeldiv {
+      margin-left: 0.5rem;
+    }
+    .textArea {
+      resize: none;
+      border: 1px solid;
+      border-radius: 1.5rem;
+      border-image-source: linear-gradient(
+        90.72deg,
+        #22405b 2.52%,
+        #0f9ec8 98.21%
+      );
+    }
+  }
+  .buttonDiv {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    font-size: large;
+
+    .buttonB {
+      color: white;
+      font-size: 16px;
+      background: linear-gradient(0deg, #22405b, #22405b);
+      width: 25%;
+      height: auto;
+      border: none;
+      border-radius: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1267px) {
+  .Formdiv {
+    width: 100%;
+    .Namediv {
+      width: 100%;
+    }
+    .Messagediv {
+      width: 100%;
+      .textArea {
+        width: 100%;
+      }
+    }
+    .buttonDiv {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .Formdiv {
+    .buttonDiv {
+      .buttonB {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .Formdiv {
+    .buttonDiv {
+      .buttonB {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .Formdiv {
+    width: 100%;
+    .Namediv {
+      width: 90%;
+    }
+    .Messagediv {
+      width: 90%;
+      .textArea {
+        width: 100%;
+      }
+    }
+    .buttonDiv {
+      width: 90%;
+      .buttonB {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .Formdiv {
+    .buttonDiv {
+      .buttonB {
+        width: 60%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 260px) {
+  .Formdiv {
+    .Namediv {
+      font-size: 16px;
+    }
+    .Messagediv {
+      font-size: 16px;
+    }
+    .buttonDiv {
+      .buttonB {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 235px) {
+  .Formdiv {
+    .buttonDiv {
+      .buttonB {
+        width: 80%;
+      }
+    }
+  }
+}

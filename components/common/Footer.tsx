@@ -2,6 +2,7 @@ import classes from "./Footer.module.scss";
 import logo from "../../public/logo.png";
 import Image from "next/image";
 import Button from "./Button";
+import { useRouter } from "next/router";
 import { IoLocationOutline, IoLogoWhatsapp } from "react-icons/io5";
 import { PiPhoneBold } from "react-icons/pi";
 import { MdOutlineEmail } from "react-icons/md";
@@ -9,6 +10,10 @@ import { FaInstagram } from "react-icons/fa";
 import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 
 export default function Footer(): JSX.Element {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("/contact-us");
+  };
   return (
     <>
       <div className={classes.container}>
@@ -16,7 +21,7 @@ export default function Footer(): JSX.Element {
           <Image src={logo} alt="Excellence foundation logo" />
           <h3>A top-notch civil engineers skill development platform</h3>
           <Button
-            onClick={() => {}}
+            onClick={handleClick}
             text="CONTACT US"
             padding="0.2rem 1.2rem"
           />
