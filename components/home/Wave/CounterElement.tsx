@@ -18,8 +18,8 @@ export default function CounterElement({
       <Bounce triggerOnce>
         <div className={classes.subContainer}>
           <h1>
-            {data.icon}{" "}
-            {counterInView && isInit ? (
+            {data.icon}
+            {/* {counterInView && isInit ? (
               <CountUp
                 end={data.number}
                 onEnd={() => {
@@ -32,8 +32,8 @@ export default function CounterElement({
               </CountUp>
             ) : (
               <span>{data.number}</span>
-            )}
-            +
+            )} */}
+            <span>{data.number}</span>+
           </h1>
           <p>{data.firstTitle}</p>
           <p>{data.secondTitle}</p>
