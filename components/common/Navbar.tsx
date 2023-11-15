@@ -59,7 +59,7 @@ const items: MenuProps["items"] = [
     getItem("Mentor", "6", <BsFillCircleFill style={dotIconStyle} />),
   ]),
   getItem("Gallery", "7", <PiGooglePhotosLogoBold style={iconsStyle} />),
-  getItem("Login", "8", <BiSolidLogInCircle style={iconsStyle} />),
+  // getItem("Login", "8", <BiSolidLogInCircle style={iconsStyle} />),
   getItem(
     <button
       style={{
@@ -105,6 +105,38 @@ export default function Navbar(): JSX.Element {
   function onClickHamburgerButtonHandler(): void {
     setIsHamburgerMenu(!isHamburgerMenu);
   }
+
+  const onClickHamburger: MenuProps["onClick"] = (e) => {
+    onClickHamburgerButtonHandler();
+    switch (e.key) {
+      case "1":
+        router.push("/");
+        break;
+      case "2":
+        router.push("/course/skill-booster");
+        break;
+      case "3":
+        router.push("/course/skill-booster");
+        break;
+      case "4":
+        router.push("/course/skill-booster");
+        break;
+      case "5":
+        router.push("/about/mentor");
+        break;
+      case "6":
+        router.push("/about/mentor");
+        break;
+      case "7":
+        router.push("/gallery");
+        break;
+      case "9":
+        onClickRegisterHandler();
+        break;
+      default:
+        break;
+    }
+  };
 
   return (
     <div className={classes.container}>
@@ -170,9 +202,9 @@ export default function Navbar(): JSX.Element {
                 </li>
               </ul>
             </li>
-            <li>
+            {/* <li>
               <Link href="/home">Login</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/gallery">Gallery</Link>
             </li>
@@ -215,6 +247,7 @@ export default function Navbar(): JSX.Element {
           }}
         >
           <Menu
+            onClick={onClickHamburger}
             mode="inline"
             items={items}
             className={classes.menu}
