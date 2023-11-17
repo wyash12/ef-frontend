@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import AboutCourse from "@/components/course/AboutCourse";
 import CourseContentContainer from "@/components/course/CourseContent";
 import WhyProgram from "../../components/course/WhyProgram";
+import MentorContainer from "@/components/course/MentorContainer";
+import FAQSection from "@/components/course/FAQ/FAQSection";
 
 export default function CoursePage(): JSX.Element {
   const router: NextRouter = useRouter();
@@ -29,6 +31,8 @@ export default function CoursePage(): JSX.Element {
         <AboutCourse data={foundCourseData.about_trining} />
         <CourseContentContainer data={foundCourseData.course_content} />
         <WhyProgram content={foundCourseData.why_program} />
+        <MentorContainer />
+        <FAQSection faq={foundCourseData.faq} />
       </>
     );
   }
