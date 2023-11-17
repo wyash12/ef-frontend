@@ -13,14 +13,14 @@ export default function CoursePage(): JSX.Element {
     (element: CourseElementModel) => element.path === coursePath
   );
 
-  useEffect(() => {
-    if (coursePath == undefined) {
-      router.push("/");
-    }
-    if (foundCourseData == undefined) {
-      router.push("/");
-    }
-  }, [coursePath, router, foundCourseData]);
+  // useEffect(() => {
+  //   if (coursePath == undefined) {
+  //     router.push("/");
+  //   }
+  //   if (foundCourseData == undefined) {
+  //     router.push("/");
+  //   }
+  // }, [coursePath, router, foundCourseData]);
 
   if (foundCourseData) {
     return (

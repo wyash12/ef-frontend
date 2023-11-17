@@ -48,6 +48,10 @@
       }
 
       .points {
+        display: flex;
+        flex-direction: column;
+        // gap: 0.5rem;
+
         .pointsContainer {
           display: flex;
           align-items: center;
@@ -56,6 +60,7 @@
         }
 
         .elementContainer {
+          margin: 0.1rem 0;
           margin-left: 1rem;
         }
       }
