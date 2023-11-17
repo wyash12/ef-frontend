@@ -1,7 +1,5 @@
-import { CourseContentElementModel } from "@/models/CourseElementModel";
 import classes from "./WhyProgram.module.scss";
 import { FaChevronCircleRight } from "react-icons/fa";
-import { CourseData } from "@/data/course_data";
 
 export default function WhyProgram({
   content,
@@ -24,8 +22,7 @@ export default function WhyProgram({
                 </div>
               );
             }
-
-            return <></>;
+            // return <></>;
           })}
         </div>
         <div className={classes.sc}>
@@ -40,7 +37,7 @@ export default function WhyProgram({
                 </div>
               );
             }
-            return <></>;
+            // return <></>;
           })}
         </div>
       </div>
