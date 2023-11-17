@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  gap: 3rem;
+  padding: 1.5rem 0; 
+  gap: 1.5rem;
 
   h1 {
     font-size: 2.2rem;
@@ -48,6 +48,10 @@
       }
 
       .points {
+        display: flex;
+        flex-direction: column;
+        // gap: 0.5rem;
+
         .pointsContainer {
           display: flex;
           align-items: center;
@@ -56,6 +60,7 @@
         }
 
         .elementContainer {
+          margin: 0.1rem 0;
           margin-left: 1rem;
         }
       }
