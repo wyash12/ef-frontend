@@ -2,7 +2,6 @@ import courseImg from "../public/course.png";
 import CourseElementModel, { TrainingMode } from "@/models/CourseElementModel";
 
 export let CourseData: Array<CourseElementModel> = [
-  // skill booster course
   {
     id: "c1",
     title: "Construction Skill Development Internship Training",
