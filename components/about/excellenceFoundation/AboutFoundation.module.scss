@@ -1,23 +1,116 @@
-.heading {
-  display: flex;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 50px;
-  color: rgba(34, 64, 91, 1);
-}
-
-.parentContainer {
-  margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .paragraph {
-    font-size: 22px;
-    text-align: justify;
-    width: 75%;
-    font-weight: 400;
+.parent {
+  .heading {
     display: flex;
     justify-content: center;
+    font-weight: 600;
+    font-size: 50px;
+    color: rgba(34, 64, 91, 1);
+  }
+
+  .parentContainer {
+    margin-top: 1.5rem;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    .paragraph {
+      font-size: 22px;
+      text-align: justify;
+      width: 75%;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media only screen and (max-width: 690px) {
+  .parent {
+    margin-top: 5rem;
+    .heading {
+      font-size: 40px;
+    }
+    .parentContainer {
+      .paragraph {
+        font-size: 18px;
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 488px) {
+  .parent {
+    width: 100%;
+    margin-left: 1.5em;
+    .heading {
+      font-size: 38px;
+      width: 100%;
+    }
+    .parentContainer {
+      .paragraph {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .parent {
+    width: 100%;
+
+    .heading {
+      font-size: 32px;
+      width: 100%;
+    }
+    .parentContainer {
+      .paragraph {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .parent {
+    .heading {
+      font-size: 28px;
+    }
+    .parentContainer {
+      .paragraph {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .parent {
+    .heading {
+      font-size: 28px;
+      .name {
+        font-size: 24px;
+      }
+    }
+    .parentContainer {
+      .paragraph {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 274px) {
+  .parent {
+    .heading {
+      font-size: 26px;
+      .name {
+        font-size: 22px;
+      }
+    }
+    .parentContainer {
+      .paragraph {
+        font-size: 12px;
+      }
+    }
   }
 }

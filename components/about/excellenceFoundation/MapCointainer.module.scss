@@ -14,3 +14,39 @@
     height: 40rem;
   }
 }
+@media only screen and (max-width: 690px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 488px) {
+  .heading {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .heading {
+    font-size: 32px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 274px) {
+  .heading {
+    font-size: 26px;
+  }
+}

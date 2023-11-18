@@ -2,9 +2,11 @@ import classes from "@/components/about/excellenceFoundation/AboutFoundation.mod
 
 export default function AboutFoundationTextContainer(): JSX.Element {
   return (
-    <>
+    <div className={classes.parent}>
       <div className={classes.heading}>About</div>
-      <div className={classes.heading}>Excellence Foundation</div>
+      <div className={classes.heading}>
+        <span className={classes.name}>Excellence Foundation</span>
+      </div>
       <div className={classes.parentContainer}>
         <div className={classes.paragraph}>
           <p>
@@ -22,6 +24,6 @@ export default function AboutFoundationTextContainer(): JSX.Element {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

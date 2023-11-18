@@ -19,3 +19,17 @@
     width: 49.7%;
   }
 }
+
+@media screen and (max-width: 688px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    .leftDiv {
+      width: 100%;
+      height: inherit;
+    }
+    .rightDiv {
+      width: 100%;
+      height: inherit;
+    }
+  }
+}

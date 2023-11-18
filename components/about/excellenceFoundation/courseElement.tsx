@@ -23,7 +23,9 @@ export default function CourseElement({
       </div>
       <div className={classes.wrapper}>
         <div className={classes.details}>
-          <h2>{data.title}</h2>
+          <span className={classes.heading}>
+            <h2>{data.title}</h2>
+          </span>
           <p>{data.subTitle}</p>
           <div className={classes.period}>
             <MdOutlineWatchLater /> {data.days} days

@@ -4,11 +4,13 @@ import Image from "next/image";
 export default function Right(): JSX.Element {
   return (
     <div className={classes.Img}>
-      <Image
-        src={HeroImg}
-        alt=""
-        style={{ width: "35rem", height: "inherit" }}
-      />
+      <div className={classes.mainImg}>
+        <Image
+          src={HeroImg}
+          alt=""
+          style={{ width: "100%", height: "inherit" }}
+        />
+      </div>
     </div>
   );
 }
