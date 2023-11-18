@@ -1,0 +1,23 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 50px;
+  color: rgba(34, 64, 91, 1);
+}
+
+.parentContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .paragraph {
+    font-size: 22px;
+    text-align: justify;
+    width: 75%;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

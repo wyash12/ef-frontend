@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  .leftDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49.7%;
+    height: 40rem;
+  }
+  .rightDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49.7%;
+  }
+}

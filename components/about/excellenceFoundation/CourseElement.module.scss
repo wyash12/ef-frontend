@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  width: 25%;
+  height: 21rem;
+  border: 2px solid #0f9ec8;
+  margin-left: 2.5rem;
+  border-radius: 1rem;
+  margin-left: 5rem;
+  cursor: pointer;
+
+  .img {
+    width: 40%;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      left: -50%;
+      top: -1%;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: -4rem;
+
+    .details {
+      padding: 1rem 0;
+      width: 100%;
+      height: 17rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+
+      h2 {
+        width: 100;
+        font-size: 1.5rem;
+        color: #22405b;
+        font-weight: 600;
+      }
+
+      p {
+        color: #0f9ec8;
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+
+      .period {
+        font-size: 1rem;
+      }
+
+      ul {
+        padding-left: 1.8rem;
+
+        li {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .explore {
+      width: 100%;
+      padding-bottom: 1rem;
+      padding-right: 1rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      button {
+        width: 60%;
+        border-radius: 0.9375rem;
+        background: linear-gradient(94deg, #0f9ec8 0%, #22405b 134.17%);
+        border: none;
+        color: white;
+        padding: 0.5rem 1.8rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
