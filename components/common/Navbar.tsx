@@ -11,7 +11,7 @@ import { FaHome } from "react-icons/fa";
 import { PiCertificateFill, PiGooglePhotosLogoBold } from "react-icons/pi";
 import { BsFillCircleFill } from "react-icons/bs";
 import { AiFillInfoCircle, AiOutlineClose } from "react-icons/ai";
-import { BiSolidLogInCircle } from "react-icons/bi";
+// import { BiSolidLogInCircle } from "react-icons/bi";
 import { CourseData } from "@/data/course_data";
 
 type MenuItem = Required<MenuProps>["items"][number];
