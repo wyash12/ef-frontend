@@ -386,7 +386,7 @@ export let CourseData: Array<CourseElementModel> = [
         id: "c1faq10",
         question: "I have some other queries. Who can help me ?",
         answer:
-          "In case you have any further queries, feel free to reach out to us at +91 8830135459. Alternatively, you may email us at excellencefoundation.nk@gmail.com",
+          "In case you have any further queries, feel free to reach out to us at +91-8830135459. Alternatively, you may email us at excellencefoundation.nk@gmail.com",
       },
     ],
   },
