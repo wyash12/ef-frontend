@@ -27,12 +27,16 @@ function ContentElement({
     >
       <div className={classes.elementSubContainer}>
         <div className={classes.title}>
-          <PiDotOutlineFill />
+          <div>
+            <PiDotOutlineFill />
+          </div>
           <h3>{data.title}</h3>
         </div>
-        {data.points !== undefined &&
-          data.points.length > 0 &&
-          (isShow ? <AiOutlineMinus /> : <AiOutlinePlus />)}
+        <div>
+          {data.points !== undefined &&
+            data.points.length > 0 &&
+            (isShow ? <AiOutlineMinus /> : <AiOutlinePlus />)}
+        </div>
       </div>
       <div className={classes.points}>
         {isShow &&
@@ -41,7 +45,9 @@ function ContentElement({
             if (typeof element == "string") {
               return (
                 <div key={index} className={classes.pointsContainer}>
-                  <PiDotOutlineDuotone />
+                  <div>
+                    <PiDotOutlineDuotone />
+                  </div>
                   <p>{element}</p>
                 </div>
               );

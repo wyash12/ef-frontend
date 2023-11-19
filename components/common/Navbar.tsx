@@ -260,7 +260,11 @@ export default function Navbar(): JSX.Element {
             className={classes.menu}
             theme="dark"
             style={{
-              width: isHamburgerMenu ? 200 : 0,
+              width: isHamburgerMenu
+                ? window.innerWidth < 300
+                  ? window.innerWidth
+                  : 300
+                : 0,
               // padding: "0rem"
             }}
           />
