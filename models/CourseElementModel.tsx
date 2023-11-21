@@ -6,7 +6,7 @@ export interface CourseContentElementModel {
   points?: Array<string | CourseContentElementModel>;
 }
 
-interface FAQModel {
+export interface FAQModel {
   id: string;
   question: string;
   answer: string;

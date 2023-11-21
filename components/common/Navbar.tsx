@@ -11,7 +11,8 @@ import { FaHome } from "react-icons/fa";
 import { PiCertificateFill, PiGooglePhotosLogoBold } from "react-icons/pi";
 import { BsFillCircleFill } from "react-icons/bs";
 import { AiFillInfoCircle, AiOutlineClose } from "react-icons/ai";
-import { BiSolidLogInCircle } from "react-icons/bi";
+// import { BiSolidLogInCircle } from "react-icons/bi";
+import { CourseData } from "@/data/course_data";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -40,6 +41,14 @@ const items: MenuProps["items"] = [
     "Our Training",
     "ourTraing",
     <PiCertificateFill style={iconsStyle} />,
+    CourseData.map((course, index) => {
+      return getItem(
+        course.title,
+        index + 2,
+        <BsFillCircleFill style={dotIconStyle} />
+      );
+    })
+    /* 
     [
       getItem("Skill Booster", "2", <BsFillCircleFill style={dotIconStyle} />),
       getItem(
@@ -49,17 +58,18 @@ const items: MenuProps["items"] = [
       ),
       getItem("Archi - norm", "4", <BsFillCircleFill style={dotIconStyle} />),
     ]
+    */
   ),
   getItem("About Us", "aboutUs", <AiFillInfoCircle style={iconsStyle} />, [
     getItem(
       "Excellence Foundation",
-      "5",
+      "6",
       <BsFillCircleFill style={dotIconStyle} />
     ),
-    getItem("Mentor", "6", <BsFillCircleFill style={dotIconStyle} />),
+    getItem("Mentor", "7", <BsFillCircleFill style={dotIconStyle} />),
   ]),
-  getItem("Gallery", "7", <PiGooglePhotosLogoBold style={iconsStyle} />),
-  getItem("Login", "8", <BiSolidLogInCircle style={iconsStyle} />),
+  getItem("Gallery", "8", <PiGooglePhotosLogoBold style={iconsStyle} />),
+  // getItem("Login", "8", <BiSolidLogInCircle style={iconsStyle} />),
   getItem(
     <button
       style={{
@@ -106,6 +116,43 @@ export default function Navbar(): JSX.Element {
     setIsHamburgerMenu(!isHamburgerMenu);
   }
 
+  const onClickHamburger: MenuProps["onClick"] = (e) => {
+    onClickHamburgerButtonHandler();
+    switch (e.key) {
+      case "1":
+        router.push("/");
+        break;
+      case "2":
+        router.push(
+          "/course/construction-skill-development-internship-training"
+        );
+        break;
+      case "3":
+        router.push("/course/skill-booster-internship-training-program");
+        break;
+      case "4":
+        router.push("/course/professional-billing-course");
+        break;
+      case "5":
+        router.push("/course/professional-estimation-and-costing-training");
+        break;
+      case "6":
+        router.push("/about/excellence-foundation");
+        break;
+      case "7":
+        router.push("/about/mentor");
+        break;
+      case "8":
+        router.push("/gallery");
+        break;
+      case "9":
+        onClickRegisterHandler();
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <div className={classes.container}>
       <div className={classes.subContainer1}>
@@ -131,19 +178,11 @@ export default function Navbar(): JSX.Element {
                   display: flexClassOur,
                 }}
               >
-                <li>
-                  <Link href="/course/skill-booster">Skill Booster</Link>
-                </li>
-                <li>
-                  <Link href="/course/professional-estimation-and-costing-tringing-program">
-                    Online estimation and costing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/course/professional-billing-course">
-                    Professional billing course
-                  </Link>
-                </li>
+                {CourseData.map((course) => (
+                  <li key={course.id}>
+                    <Link href={course.path}>{course.title}</Link>
+                  </li>
+                ))}
               </ul>
             </li>
             <li
@@ -170,9 +209,9 @@ export default function Navbar(): JSX.Element {
                 </li>
               </ul>
             </li>
-            <li>
+            {/* <li>
               <Link href="/home">Login</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/gallery">Gallery</Link>
             </li>
@@ -215,12 +254,17 @@ export default function Navbar(): JSX.Element {
           }}
         >
           <Menu
+            onClick={onClickHamburger}
             mode="inline"
             items={items}
             className={classes.menu}
             theme="dark"
             style={{
-              width: isHamburgerMenu ? 200 : 0,
+              width: isHamburgerMenu
+                ? window.innerWidth < 300
+                  ? window.innerWidth
+                  : 300
+                : 0,
               // padding: "0rem"
             }}
           />

@@ -5,7 +5,7 @@ import CourseElementModel from "@/models/CourseElementModel";
 
 export default function CourseContainer(): JSX.Element {
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="course">
       <h1>Internship training courses </h1>
       <div className={classes.courseContainer}>
         {CourseData.map((element: CourseElementModel, index) => {
