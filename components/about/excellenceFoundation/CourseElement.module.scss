@@ -1,7 +1,7 @@
 .container {
   display: flex;
   width: 25%;
-  height: 21rem;
+  height: 23.8rem;
   border: 2px solid #0f9ec8;
   margin-left: 2.5rem;
   border-radius: 1rem;
@@ -14,10 +14,10 @@
 
     img {
       position: absolute;
-      width: 100%;
+      width: 80%;
       height: auto;
-      left: -50%;
-      top: -1%;
+      left: -27%;
+      top: 0%;
     }
   }
 
@@ -71,7 +71,7 @@
 
       button {
         width: 60%;
-        margin-top: 1rem;
+        margin-top: 3.5rem;
         border-radius: 0.9375rem;
         background: linear-gradient(94deg, #0f9ec8 0%, #22405b 134.17%);
         border: none;
