@@ -361,7 +361,7 @@ export default function Footer(): JSX.Element {
         <Image src={logo} alt="Excellence foundation logo" />
         <h3>A top-notch civil engineers skill development platform</h3>
         {/* <Button onClick={() => {}} text="CONTACT US" padding="0.2rem 1.2rem" /> */}
-        <button>CONTACT US</button>
+        <button onClick={handleClick}>CONTACT US</button>
       </div>
       <div className={`${classes.subContainer2} ${classes.subContainer}`}>
         <h4>HELPFUL LINKS</h4>
