@@ -1,12 +1,27 @@
 .contactDiv {
-  background: linear-gradient(0deg, #0f9ec8 0%, #ffffff 122.97%);
-
+  // background: linear-gradient(0deg, #0f9ec8 0%, #ffffff 122.97%);
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #e7e9f6,
+    #cad5ee,
+    #a6c3e6,
+    #7ab3db,
+    #62acd5,
+    #45a6cf,
+    #0e9fc8,
+    #0e9fc8,
+    #0f9fc9,
+    #0f9fc9,
+    #0f9fc9
+  );
   width: 100%;
-  height: 60rem;
+  height: 42.6rem;
   .headingDiv {
+    padding-bottom: 1rem;
     text-align: center;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 3.5rem;
   }
   .LnRcontainer {
     width: 100%;
@@ -14,14 +29,16 @@
     flex-direction: row;
 
     .Left {
-      width: 54.6%;
-      margin-right: 0.4%;
-      height: 54.3rem;
+      // background: black;
+      width: 55%;
       display: flex;
+      justify-content: center;
+      height: fit-content;
     }
     .Right {
+      // background: black;
       width: 45%;
-      height: 54.3rem;
+      height: fit-content;
       display: flex;
     }
   }

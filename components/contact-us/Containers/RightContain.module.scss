@@ -1,12 +1,12 @@
 .Imgdiv {
+  // background: black;
   width: 100%;
+  height: inherit;
   display: flex;
   justify-content: center;
-  align-items: center;
   .Imge {
-    margin-top: -8rem;
-    width: 70%;
-    height: inherit;
+    width: 69%;
+    height: fit-content;
   }
 }
 
