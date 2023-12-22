@@ -1,0 +1,63 @@
+.heading {
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  font-weight: 600;
+  font-size: 50px;
+  color: rgba(34, 64, 91, 1);
+}
+.courseDiv {
+  margin-top: 2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 865px) {
+  .courseDiv {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 488px) {
+  .heading {
+    font-size: 38px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .heading {
+    font-size: 32px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 274px) {
+  .heading {
+    font-size: 26px;
+  }
+}
