@@ -15,7 +15,7 @@
       display: flex;
       width: 101%;
       height: 3.1rem;
-
+      outline: none;
       border: 1px solid;
       border-radius: 1rem;
       border-image-source: linear-gradient(
@@ -23,6 +23,7 @@
         #22405b 2.52%,
         #0f9ec8 98.21%
       );
+      padding-left: 0.5rem;
     }
   }
   .Messagediv {
@@ -32,12 +33,15 @@
       height: 9rem;
       resize: none;
       border: 1px solid;
+      outline: none;
       border-radius: 1.5rem;
       border-image-source: linear-gradient(
         90.72deg,
         #22405b 2.52%,
         #0f9ec8 98.21%
       );
+      padding-top: 0.5rem;
+      padding-left: 0.5rem;
     }
   }
   .buttonDiv {
