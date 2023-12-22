@@ -12,7 +12,7 @@ export default function LeftContain(): JSX.Element {
         <form>
           <div className={classes.Namediv}>
             <label className={classes.Labeldiv} htmlFor="Name">
-              Your name <span className={classes.spanClass}>*</span>
+              Your Name <span className={classes.spanClass}>*</span>
             </label>
             <div>
               <input className={classes.inputDiv} type="text" />

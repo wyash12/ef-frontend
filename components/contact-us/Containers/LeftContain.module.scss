@@ -1,51 +1,47 @@
 .Formdiv {
-  margin-left: 1rem;
+  // background: black;
   width: 100%;
   display: flex;
-
-  //   justify-content: center;
-  //   align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
   .Namediv {
     width: 100%;
-    height: 5rem;
-    margin-top: 2rem;
-    margin-left: 1rem;
-    font-size: large;
-    .Labeldiv {
-      margin-left: 0.5rem;
-    }
+    height: 5.3rem;
+    margin-top: 1rem;
     .spanClass {
       color: red;
     }
     .inputDiv {
       display: flex;
-      width: 100%;
-      height: 3rem;
+      width: 101%;
+      height: 3.1rem;
+      outline: none;
       border: 1px solid;
-      border-radius: 2rem;
+      border-radius: 1rem;
       border-image-source: linear-gradient(
         90.72deg,
         #22405b 2.52%,
         #0f9ec8 98.21%
       );
+      padding-left: 0.5rem;
     }
   }
   .Messagediv {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    font-size: large;
-    .Labeldiv {
-      margin-left: 0.5rem;
-    }
+    margin-bottom: 1.5rem;
     .textArea {
+      width: 101%;
+      height: 9rem;
       resize: none;
       border: 1px solid;
+      outline: none;
       border-radius: 1.5rem;
       border-image-source: linear-gradient(
         90.72deg,
         #22405b 2.52%,
         #0f9ec8 98.21%
       );
+      padding-top: 0.5rem;
+      padding-left: 0.5rem;
     }
   }
   .buttonDiv {
@@ -53,13 +49,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
-    margin-left: 1rem;
-    font-size: large;
 
     .buttonB {
       color: white;
-      font-size: 16px;
       background: linear-gradient(0deg, #22405b, #22405b);
       width: 25%;
       height: auto;

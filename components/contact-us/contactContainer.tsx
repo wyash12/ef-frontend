@@ -7,7 +7,7 @@ export default function ContactPage(): JSX.Element {
   return (
     <>
       <div className={classes.contactDiv}>
-        <div className={classes.headingDiv}>Contact form</div>
+        <div className={classes.headingDiv}>Contact Form</div>
         <div className={classes.LnRcontainer}>
           <div className={classes.Left}>
             <LeftContain />
