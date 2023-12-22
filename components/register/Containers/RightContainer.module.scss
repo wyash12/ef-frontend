@@ -1,119 +1,160 @@
-.heading {
-  margin-top: -10px;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 86.1px;
+.container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-}
+  font-family: Poppins;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 100%;
 
-.description {
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 5px;
-  padding-bottom: 15px;
-}
+  .heading {
+    // margin-top: -10px;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    color: #010101;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.0875rem;
+  }
 
-.form {
-  .divClass {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    .spanClass {
-      font-weight: bold;
-      color: red;
-    }
-    .inputBox {
-      font-size: medium;
-      font-weight: 500;
-      width: 533px;
-      height: 42px;
-      padding-top: 1px;
-      padding-left: 10px;
-      border: 1px solid black;
-      outline: linear-gradient(90.72deg, #22405b 2.52%, #0f9ec8 98.21%);
-      border-radius: 17.2px;
-    }
+  .description {
+    font-size: 0.9rem;
+    padding-top: 0.3rem;
+    padding-bottom: 1.3rem;
+    text-align: center;
   }
-  .batchAndCourseDiv {
+
+  .form {
+    width: 75%;
+    font-family: Poppins;
     display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    .batchDiv {
+    flex-direction: column;
+    gap: 1.1rem;
+
+    .divClass {
+      // padding-top: 5px;
+      // padding-bottom: 5px;
       display: flex;
       flex-direction: column;
-    }
-    .courseDiv {
-      display: flex;
-      flex-direction: column;
-    }
-    .spanClass {
-      font-weight: bold;
-      color: red;
-    }
-    .inputBox {
-      font-weight: 500;
-      width: 198px;
-      height: 42px;
-      padding-top: 1px;
-      padding-left: 10px;
-      border: 1px solid black;
-      outline: linear-gradient(90.72deg, #22405b 2.52%, #0f9ec8 98.21%);
-      border-radius: 17.2px;
-    }
-  }
-  .bdayAndWhatsappDiv {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    .birthdayDiv {
-      display: flex;
-      flex-direction: column;
-      .imgClass {
-        position: absolute;
-        margin-top: 33px;
-        margin-left: 165px;
-        width: 25px;
-        height: inherit;
+      gap: 0.4rem;
+
+      label {
+        font-size: 0.9rem;
+        // color: red;
+      }
+
+      .spanClass {
+        // font-weight: bold;
+        color: #ff3d00;
+      }
+
+      .inputWrapper {
+        background: linear-gradient(to right, #22405b, #0f9ec8);
+        border-radius: 0.8rem;
+        padding: 1px;
+
+        .inputBox {
+          background: white;
+          width: 100%;
+          // padding-top: 1px;
+          // padding-left: 10px;
+          padding: 0.4rem 0.6rem;
+          // border: 0px solid transparent;
+          border: none;
+          outline: none;
+          border-radius: 0.69rem;
+        }
       }
     }
-    .wappDiv {
-      display: flex;
-      flex-direction: column;
-    }
-    .spanClass {
-      font-weight: bold;
-      color: red;
-    }
-    .inputBox {
-      font-weight: 500;
-      width: 198px;
-      height: 42px;
-      padding-top: 10px;
-      padding-left: 3px;
-      border: 1px solid black;
-      outline: linear-gradient(90.72deg, #22405b 2.52%, #0f9ec8 98.21%);
-      border-radius: 17.2px;
-    }
-  }
 
-  .registerDiv {
-    display: flex;
-    justify-content: center;
+    .batchAndCourseDiv {
+      display: flex;
+      gap: 2rem;
+      width: 100%;
+      justify-content: space-between;
+      // padding-top: 10px;
+      // padding-bottom: 10px;
+
+      .batchDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .courseDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .spanClass {
+        // font-weight: bold;
+        color: #ff3d00;
+      }
+
+      // .inputBox {
+      //   font-weight: 500;
+      //   width: 198px;
+      //   height: 42px;
+      //   padding-top: 1px;
+      //   padding-left: 10px;
+      //   border: 1px solid black;
+      //   outline: linear-gradient(90.72deg, #22405b 2.52%, #0f9ec8 98.21%);
+      //   border-radius: 17.2px;
+      // }
+    }
+
+    .bdayAndWhatsappDiv {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      // padding-top: 10px;
+      // padding-bottom: 10px;
+
+      .birthdayDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .wappDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .spanClass {
+        font-weight: bold;
+        color: #ff3d00;
+      }
+
+      // .inputBox {
+      //   font-weight: 500;
+      //   width: 198px;
+      //   height: 42px;
+      //   padding-top: 10px;
+      //   padding-left: 3px;
+      //   border: 1px solid black;
+      //   outline: linear-gradient(90.72deg, #22405b 2.52%, #0f9ec8 98.21%);
+      //   border-radius: 17.2px;
+      // }
+    }
+
     .register {
-      font-size: 15px;
-      margin-top: 15px;
-      border: 0px solid #22405b;
+      margin-top: 1rem;
+      font-size: 1rem;
       background: #0e9fc8;
       color: white;
-      width: 240px;
-      height: 42px;
       border: none;
       border-radius: 0.8rem;
       cursor: pointer;
+      width: 30%;
+      padding: 0.3rem; 
+      align-self: center;
     }
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .form {
     width: 80%;
