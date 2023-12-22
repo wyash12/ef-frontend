@@ -67,41 +67,55 @@
       }
     }
 
-    .batchAndCourseDiv {
-      display: flex;
-      gap: 2rem;
-      width: 100%;
-      justify-content: space-between;
-      // padding-top: 10px;
-      // padding-bottom: 10px;
+    // .batchAndCourseDiv {
+    //   display: flex;
+    //   gap: 1rem;
+    //   width: 100%;
+    //   justify-content: space-between;
+    //   flex-direction: column;
+    //   // padding-top: 10px;
+    //   // padding-bottom: 10px;
 
-      .batchDiv {
-        display: flex;
-        flex-direction: column;
+    //   .batchDiv {
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 100%;
+    //   }
+
+    //   .courseDiv {
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 100%;
+    //   }
+
+    //   .spanClass {
+    //     // font-weight: bold;
+    //     color: #ff3d00;
+    //   }
+
+    // .inputBox {
+    //   font-weight: 500;
+    //   width: 198px;
+    //   height: 42px;
+    //   padding-top: 1px;
+    //   padding-left: 10px;
+    //   border: 1px solid black;
+    //   outline: linear-gradient(90.72deg, #22405b 2.52%, #0f9ec8 98.21%);
+    //   border-radius: 17.2px;
+    // }
+    // }
+
+    .selectWrapper {
+      background: linear-gradient(to right, #22405b, #0f9ec8);
+      border-radius: 0.8rem;
+      // width: 100%;
+      padding: 1px;
+
+      .select {
         width: 100%;
+        background: white;
+        border-radius: 0.69rem;
       }
-
-      .courseDiv {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .spanClass {
-        // font-weight: bold;
-        color: #ff3d00;
-      }
-
-      // .inputBox {
-      //   font-weight: 500;
-      //   width: 198px;
-      //   height: 42px;
-      //   padding-top: 1px;
-      //   padding-left: 10px;
-      //   border: 1px solid black;
-      //   outline: linear-gradient(90.72deg, #22405b 2.52%, #0f9ec8 98.21%);
-      //   border-radius: 17.2px;
-      // }
     }
 
     .bdayAndWhatsappDiv {
@@ -149,7 +163,7 @@
       border-radius: 0.8rem;
       cursor: pointer;
       width: 30%;
-      padding: 0.3rem; 
+      padding: 0.3rem;
       align-self: center;
     }
   }

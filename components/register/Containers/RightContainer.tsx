@@ -1,15 +1,41 @@
 import React from "react";
-import Image from "next/image";
 import { useState } from "react";
-import DatePicker from "react-datepicker";
-import Insert_Table from "@/public/Insert_Table.png";
 import classes from "@/components/register/Containers/RightContainer.module.scss";
+import { Select } from "antd";
+import { CourseData } from "@/data/course_data";
 
 export default function RightContainer() {
-  // const [selectedDate, setSelectedDate] = useState<Date | null>(null);
-  // const handleDateChange = (date: Date | null) => {
-  //   setSelectedDate(date);
-  // };
+  const [courseValue, setCourseValue] = useState<string | null>(null);
+  const [batchValue, setBatchValue] = useState<string | null>(null);
+  const [batches, setBatches] = useState<any[]>([]);
+
+  const courseOptions: any[] = [];
+
+  CourseData.map((course) =>
+    courseOptions.push({
+      value: course.id,
+      label: course.title,
+    })
+  );
+
+  const onCourseSelection = (value: string) => {
+    setCourseValue(value);
+    const newBatches: any[] = [];
+    const foundIndex = CourseData.findIndex((course) => course.id === value);
+    if (foundIndex !== -1) {
+      CourseData[foundIndex].next_program_date.map((np) => {
+        newBatches.push({
+          value: np.id,
+          label: `${np.date} ${np.time != null ? np.time : ""}`,
+        });
+      });
+      setBatches(newBatches);
+    }
+  };
+
+  const onBatchSelection = (value: string) => {
+    setBatchValue(value);
+  };
 
   const handleSubmit = () => {
     console.log("submitted");
@@ -67,31 +93,47 @@ export default function RightContainer() {
           </div>
           <div className={`${classes.wappDiv} ${classes.divClass}`}>
             <label htmlFor="Whatsapp Nubmer">
-              WhatsApp No.<span className={classes.spanClass}>*</span>
+              WhatsApp Number (+91)<span className={classes.spanClass}>*</span>
             </label>
             <div className={classes.inputWrapper}>
               <input type="text" className={classes.inputBox} />
             </div>
           </div>
         </div>
-        <div className={classes.batchAndCourseDiv}>
-          <div className={`${classes.batchDiv} ${classes.divClass}`}>
-            <label htmlFor="Batch">
-              Batch<span className={classes.spanClass}>*</span>
-            </label>
-            <div className={classes.inputWrapper}>
+        {/* <div className={classes.batchAndCourseDiv}> */}
+        <div className={`${classes.courseDiv} ${classes.divClass}`}>
+          <label htmlFor="Course">
+            Course<span className={classes.spanClass}>*</span>
+          </label>
+          {/* <div className={classes.inputWrapper}>
               <input type="text" className={classes.inputBox} />
-            </div>
-          </div>
-          <div className={`${classes.courseDiv} ${classes.divClass}`}>
-            <label htmlFor="Course">
-              Course<span className={classes.spanClass}>*</span>
-            </label>
-            <div className={classes.inputWrapper}>
-              <input type="text" className={classes.inputBox} />
-            </div>
+            </div> */}
+          <div className={classes.selectWrapper}>
+            <Select
+              onChange={onCourseSelection}
+              className={classes.select}
+              bordered={false}
+              options={courseOptions}
+            />
           </div>
         </div>
+        <div className={`${classes.batchDiv} ${classes.divClass}`}>
+          <label htmlFor="Batch">
+            Batch<span className={classes.spanClass}>*</span>
+          </label>
+          {/* <div className={classes.inputWrapper}>
+              <input type="text" className={classes.inputBox} />
+            </div> */}
+          <div className={classes.selectWrapper}>
+            <Select
+              onChange={onBatchSelection}
+              className={classes.select}
+              bordered={false}
+              options={batches}
+            />
+          </div>
+        </div>
+        {/* </div> */}
         <div className={classes.divClass}>
           <label htmlFor="current-address">
             Current Address<span className={classes.spanClass}>*</span>

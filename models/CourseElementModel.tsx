@@ -17,6 +17,12 @@ export enum TrainingMode {
   Online,
 }
 
+export interface NextProgramDate {
+  id: string;
+  date: string;
+  time?: string;
+}
+
 export default interface CourseElementModel {
   id: string;
   title: string;
@@ -25,7 +31,7 @@ export default interface CourseElementModel {
   path: string;
   features: Array<string>;
   courseImg: StaticImageData;
-  next_program_date: string;
+  next_program_date: Array<NextProgramDate>;
   training_mode: TrainingMode;
   training_fees: number;
   about_trining: string;
