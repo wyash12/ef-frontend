@@ -1,5 +1,5 @@
 import classes from "./PlacementContainer.module.scss";
-import placementImg from "../../../public/placement_logos.png";
+// import placementImg from "../../../public/placement_logos.png";
 import Image from "next/image";
 import Carousel from "react-material-ui-carousel";
 
