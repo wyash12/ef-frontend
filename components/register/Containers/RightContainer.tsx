@@ -149,39 +149,41 @@ export default function RightContainer() {
           <label htmlFor="Email">
             Reference<span className={classes.spanClass}>*</span>
           </label>
-          {[
-            "Facebook",
-            "Instagram",
-            "Referred by Friend / Colleague",
-            "Other",
-          ].map((element, index) => (
-            <div key={index} className={classes.refWrapper}>
-              <div className={classes.ref}>
-                <input
-                  type="radio"
-                  id="reference"
-                  name="reference"
-                  value={element}
-                  onChange={() => {
-                    setReference(element);
-                  }}
-                  required
-                />
-                <label>{element}</label>
+          <div className={classes.referenceContainer}>
+            {[
+              "Facebook",
+              "Instagram",
+              "Referred by Friend / Colleague",
+              "Other",
+            ].map((element, index) => (
+              <div key={index} className={classes.refWrapper}>
+                <div className={classes.ref}>
+                  <input
+                    type="radio"
+                    id="reference"
+                    name="reference"
+                    value={element}
+                    onChange={() => {
+                      setReference(element);
+                    }}
+                    required
+                  />
+                  <label>{element}</label>
+                </div>
+                {element === "Referred by Friend / Colleague" &&
+                  reference === "Referred by Friend / Colleague" && (
+                    <div className={classes.inputWrapper}>
+                      <input
+                        type="text"
+                        className={classes.inputBox}
+                        required
+                        placeholder="Enter Friend / Colleague Name"
+                      />
+                    </div>
+                  )}
               </div>
-              {element === "Referred by Friend / Colleague" &&
-                reference === "Referred by Friend / Colleague" && (
-                  <div className={classes.inputWrapper}>
-                    <input
-                      type="text"
-                      className={classes.inputBox}
-                      required
-                      placeholder="Enter Friend / Colleague Name"
-                    />
-                  </div>
-                )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <button
           type="submit"
