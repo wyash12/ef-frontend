@@ -8,6 +8,7 @@ export default function RightContainer() {
   const [courseValue, setCourseValue] = useState<string | null>(null);
   const [batchValue, setBatchValue] = useState<string | null>(null);
   const [batches, setBatches] = useState<any[]>([]);
+  const [reference, setReference] = useState<string | null>(null);
 
   const courseOptions: any[] = [];
 
@@ -20,6 +21,7 @@ export default function RightContainer() {
 
   const onCourseSelection = (value: string) => {
     setCourseValue(value);
+    setBatchValue(null);
     const newBatches: any[] = [];
     const foundIndex = CourseData.findIndex((course) => course.id === value);
     if (foundIndex !== -1) {
@@ -67,7 +69,7 @@ export default function RightContainer() {
             Email<span className={classes.spanClass}>*</span>
           </label>
           <div className={classes.inputWrapper}>
-            <input type="text" className={classes.inputBox} />
+            <input type="text" className={classes.inputBox} required />
           </div>
         </div>
         <div className={classes.divClass}>
@@ -76,7 +78,7 @@ export default function RightContainer() {
             <span className={classes.spanClass}>*</span>
           </label>
           <div className={classes.inputWrapper}>
-            <input type="text" className={classes.inputBox} />
+            <input type="text" className={classes.inputBox} required />
           </div>
         </div>
         <div className={classes.bdayAndWhatsappDiv}>
@@ -87,7 +89,7 @@ export default function RightContainer() {
             </label>
 
             <div className={classes.inputWrapper}>
-              <input type="date" className={classes.inputBox} />
+              <input type="date" className={classes.inputBox} required />
             </div>
             {/* <Image src={Insert_Table} alt="" className={classes.imgClass} /> */}
           </div>
@@ -96,7 +98,7 @@ export default function RightContainer() {
               WhatsApp Number (+91)<span className={classes.spanClass}>*</span>
             </label>
             <div className={classes.inputWrapper}>
-              <input type="text" className={classes.inputBox} />
+              <input type="text" className={classes.inputBox} required />
             </div>
           </div>
         </div>
@@ -130,6 +132,7 @@ export default function RightContainer() {
               className={classes.select}
               bordered={false}
               options={batches}
+              value={batchValue}
             />
           </div>
         </div>
@@ -138,11 +141,47 @@ export default function RightContainer() {
           <label htmlFor="current-address">
             Current Address<span className={classes.spanClass}>*</span>
           </label>
-          <div className="">
-            <div className={classes.inputWrapper}>
-              <input type="text" className={classes.inputBox} />
-            </div>
+          <div className={classes.inputWrapper}>
+            <input type="text" className={classes.inputBox} required />
           </div>
+        </div>
+        <div className={classes.divClass}>
+          <label htmlFor="Email">
+            Reference<span className={classes.spanClass}>*</span>
+          </label>
+          {[
+            "Facebook",
+            "Instagram",
+            "Referred by Friend / Colleague",
+            "Other",
+          ].map((element, index) => (
+            <div key={index} className={classes.refWrapper}>
+              <div className={classes.ref}>
+                <input
+                  type="radio"
+                  id="reference"
+                  name="reference"
+                  value={element}
+                  onChange={() => {
+                    setReference(element);
+                  }}
+                  required
+                />
+                <label>{element}</label>
+              </div>
+              {element === "Referred by Friend / Colleague" &&
+                reference === "Referred by Friend / Colleague" && (
+                  <div className={classes.inputWrapper}>
+                    <input
+                      type="text"
+                      className={classes.inputBox}
+                      required
+                      placeholder="Enter Friend / Colleague Name"
+                    />
+                  </div>
+                )}
+            </div>
+          ))}
         </div>
         <button
           type="submit"

@@ -167,6 +167,28 @@
       align-self: center;
     }
   }
+
+  .refWrapper {
+    display: flex;
+    flex-direction: column;
+    // gap: 0.5rem;
+
+    .ref {
+      padding-left: 0.5rem;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .inputWrapper {
+      width: 50%;
+      margin-left: 2rem;
+
+      .inputBox {
+        background-color: red;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {
