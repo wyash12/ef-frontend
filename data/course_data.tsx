@@ -31,6 +31,8 @@ export let CourseData: Array<CourseElementModel> = [
     course_content: c1cc,
     why_program: c1wp,
     faq: c1faq,
+    training_description: `In this course, we come across Basic Civil Knowledge, Business Skills, all types of construction drawing reading skills, site execution, Estimation and costing, Plan drafting, Project Billing, Project management skills, and many more. But it's not just about acquiring skills and knowledge; it's about how you can apply those skills and knowledge in the real world. That's why we arrange a mock interview for our trainees to propel propelling their your career to new heights.`,
+    fees_breakup: `We are glad to say that we are coming with the Fees for "Construction Skill Development Internship Training!" is 16,000/- only\n &#8226; Secure Your Spot: Confirm your registration with a Rs. 2000/- fee (deducted from the total).\n &#8226; Flexible Payment Options: Pay in 2 installments.\n 1). First Installment: In the First Week after Joining with Rs. 7000/-\n 2). Second Instalment: Your second installment of Rs. 7000/- is due 15 days after joining.`,
   },
   {
     id: "c2",
@@ -58,6 +60,8 @@ export let CourseData: Array<CourseElementModel> = [
     course_content: c2cc,
     why_program: c2wp,
     faq: c2faq,
+    training_description: `Skill Booster Internship Training Program is a blend of technical and professional elements proven to be a gateway to a strong civil engineering career.`,
+    fees_breakup: `We are glad to say that we are coming with the Fees for "SKILL BOOSTER PROGRAM FOR CIVIL ENGINEERS!" is 8,000/- only\n1)Registration Fees - Rs 1,000/-\n2) Remaining Fees - Rs 7,000/- You have to pay in the first week after after joining.`,
   },
   {
     id: "c3",
@@ -86,6 +90,8 @@ export let CourseData: Array<CourseElementModel> = [
     course_content: c3cc,
     why_program: c3wp,
     faq: c3faq,
+    training_description: `Professional billing course by Excellence Foundation makes you an expert in the field of preparing bills and claims as per contract documents and IS Codes. This extensive course gives students/Professionals a full understanding of billing engineering's core ideas and top practices.`,
+    fees_breakup: `We are glad to say that we are coming with the Fees for "Professional Billing Course" is 5,000/- only\n1)Registration Fees - Rs 1,000/-\n2) Remaining Fees - Rs 4,000/- You have to pay in the first week after after joining.`,
   },
   {
     id: "c4",
@@ -113,5 +119,7 @@ export let CourseData: Array<CourseElementModel> = [
     course_content: c4cc,
     why_program: c4wp,
     faq: c4faq,
+    training_description: `This training makes you expert in estimation & Costing of any Building from Substructure to Superstructure. In this Training, you have to solve the project live with a trainer. You will also get to know the different methods of project estimation. The course is infused with Real Project Case study, photographs and Videos to understand different aspects of construction better. This Training will not only help the participants to gain the skills, but it will also help in uplifting the pay scale & Career Development.`,
+    fees_breakup: `We are glad to say that we are coming with the Fees for "Professional Estimation & Costing Training Program!" is 3,500/- only`,
   },
 ];

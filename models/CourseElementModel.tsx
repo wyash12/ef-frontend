@@ -38,4 +38,6 @@ export default interface CourseElementModel {
   course_content: Array<CourseContentElementModel>;
   why_program: Array<string>;
   faq: Array<FAQModel>;
+  training_description: string;
+  fees_breakup: string;
 }

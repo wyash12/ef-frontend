@@ -9,3 +9,7 @@ export default function Payment({
 }): JSX.Element {
   return <h1>Hello</h1>;
 }
+
+Payment.getLayout = function getLayout(page: any) {
+  return <>{page}</>;
+};
