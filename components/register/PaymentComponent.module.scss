@@ -1,0 +1,96 @@
+.container {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .topImage {
+      height: 2.5rem;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    img {
+      height: 6rem;
+      width: auto;
+    }
+  }
+
+  .subContainerWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    flex-direction: column;
+
+    .subContainer {
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      margin-bottom: 2rem;
+
+      .name,
+      .description,
+      .feesBreakup {
+        display: flex;
+        flex-direction: row;
+        // line-break: anywhere;
+        white-space: pre-wrap;
+        padding-bottom: 1rem;
+
+        p {
+          text-align: justify;
+          color: #666666;
+          font-size: 0.9rem;
+          line-height: 1.5rem;
+          font-family: poppins;
+        }
+      }
+
+      .name,
+      .description {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    button {
+      background: #07d99b;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 0.6rem;
+      border: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: ease-in all 0.5s;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1268db;
+    }
+  }
+
+  .footer {
+    .bottomImage {
+      width: 100%;
+      height: 6rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    p {
+      text-align: center;
+      color: #0aa69e;
+    }
+  }
+}

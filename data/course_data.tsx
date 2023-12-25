@@ -32,7 +32,7 @@ export let CourseData: Array<CourseElementModel> = [
     why_program: c1wp,
     faq: c1faq,
     training_description: `In this course, we come across Basic Civil Knowledge, Business Skills, all types of construction drawing reading skills, site execution, Estimation and costing, Plan drafting, Project Billing, Project management skills, and many more. But it's not just about acquiring skills and knowledge; it's about how you can apply those skills and knowledge in the real world. That's why we arrange a mock interview for our trainees to propel propelling their your career to new heights.`,
-    fees_breakup: `We are glad to say that we are coming with the Fees for "Construction Skill Development Internship Training!" is 16,000/- only\n &#8226; Secure Your Spot: Confirm your registration with a Rs. 2000/- fee (deducted from the total).\n &#8226; Flexible Payment Options: Pay in 2 installments.\n 1). First Installment: In the First Week after Joining with Rs. 7000/-\n 2). Second Instalment: Your second installment of Rs. 7000/- is due 15 days after joining.`,
+    fees_breakup: `We are glad to say that we are coming with the Fees for "Construction Skill Development Internship Training!" is 16,000/- only\n * Secure Your Spot: Confirm your registration with a Rs. 2000/- fee (deducted from the total).\n * Flexible Payment Options: Pay in 2 installments.\n 1) First Installment: In the First Week after Joining with Rs. 7000/-\n 2) Second Instalment: Your second installment of Rs. 7000/- is due 15 days after joining.`,
   },
   {
     id: "c2",

@@ -104,7 +104,10 @@ export default function RightContainer() {
         throw new Error(result.errorMessage);
       }
       // console.log(result.data);
-      localStorage.setItem("Order", result.data);
+      // const t = JSON.stringify(result.data);
+      // console.log(t);
+      localStorage.setItem("Order", JSON.stringify(result.data));
+      localStorage.setItem("Course", courseValue);
       router.replace("/register/payment");
     } catch (error: any) {
       api["error"]({
