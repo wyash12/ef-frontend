@@ -27,9 +27,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3rem;
+    // margin: 3rem;
     flex-direction: column;
-
+    padding: 2.5rem;
     .subContainer {
       width: 85%;
       display: flex;
@@ -93,4 +93,42 @@
       color: #0aa69e;
     }
   }
+}
+
+
+@media (max-width: 470px) {
+  .container {
+    .navbar {
+      img {
+        height: 4rem;
+      }
+    }
+    .subContainerWrapper {
+      padding: 2rem 1rem;
+      .subContainer {
+        width: 90%;
+        gap: 1rem;
+        margin-bottom: 1rem;
+  
+        .name,
+        .description,
+        .feesBreakup {
+          p {
+            font-size: 0.8rem;
+            line-height: 1.3rem;
+          }
+        }
+      }
+  
+      button {
+        font-size: 0.9rem;
+      }
+    }
+  
+    .footer { 
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }  
 }
