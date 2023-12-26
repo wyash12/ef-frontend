@@ -61,7 +61,7 @@ export let CourseData: Array<CourseElementModel> = [
     why_program: c2wp,
     faq: c2faq,
     training_description: `Skill Booster Internship Training Program is a blend of technical and professional elements proven to be a gateway to a strong civil engineering career.`,
-    fees_breakup: `We are glad to say that we are coming with the Fees for "SKILL BOOSTER PROGRAM FOR CIVIL ENGINEERS!" is 8,000/- only\n1)Registration Fees - Rs 1,000/-\n2) Remaining Fees - Rs 7,000/- You have to pay in the first week after after joining.`,
+    fees_breakup: `We are glad to say that we are coming with the Fees for "SKILL BOOSTER PROGRAM FOR CIVIL ENGINEERS!" is 8,000/- only\n1) Registration Fees - Rs 1,000/-\n2) Remaining Fees - Rs 7,000/- You have to pay in the first week after after joining.`,
   },
   {
     id: "c3",
@@ -91,7 +91,7 @@ export let CourseData: Array<CourseElementModel> = [
     why_program: c3wp,
     faq: c3faq,
     training_description: `Professional billing course by Excellence Foundation makes you an expert in the field of preparing bills and claims as per contract documents and IS Codes. This extensive course gives students/Professionals a full understanding of billing engineering's core ideas and top practices.`,
-    fees_breakup: `We are glad to say that we are coming with the Fees for "Professional Billing Course" is 5,000/- only\n1)Registration Fees - Rs 1,000/-\n2) Remaining Fees - Rs 4,000/- You have to pay in the first week after after joining.`,
+    fees_breakup: `We are glad to say that we are coming with the Fees for "Professional Billing Course" is 5,000/- only\n1) Registration Fees - Rs 1,000/-\n2) Remaining Fees - Rs 4,000/- You have to pay in the first week after after joining.`,
   },
   {
     id: "c4",

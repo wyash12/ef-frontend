@@ -5,30 +5,69 @@ import EFImage from "../../public/logo.png";
 import Image from "next/image";
 import { notification } from "antd";
 import { useEffect, useState } from "react";
+import OrderModel from "@/models/OrderModel";
+import { useRouter } from "next/router";
 
 interface Props {
   trainingName: string;
   trainingDescription: string;
   feesBreakup: string;
+  orderData: OrderModel;
+  name: string;
+  mobileNumber: string;
+  email: string;
 }
 
 export default function PaymentComponent(data: Props): JSX.Element {
-  // const [api, contextHolder] = notification.useNotification();
-  // const [trigger, setTrigger] = useState(true);
+  const router = useRouter();
+  const [api, contextHolder] = notification.useNotification();
 
-  // useEffect(() => {
-  //   if (trigger) {
-  //     api["info"]({
-  //       message: `Please don't refresh or leave the page`,
-  //       duration: null,
-  //     });
-  //     setTrigger(false);
-  //   }
-  // }, [api, trigger]);
+  useEffect(() => {
+    api["info"]({
+      message: `Please don't refresh or leave the page`,
+      duration: null,
+    });
+  }, [api]);
+
+  const onPaymentHandler = () => {
+    const options = {
+      key: "rzp_test_jRv92tDiAcSF66",
+      amount: data.orderData.amount,
+      currency: data.orderData.currency,
+      name: "Excellence Foundation",
+      image: EFImage,
+      order_id: data.orderData.id,
+      theme: {
+        color: "#22405B",
+      },
+      remember_customer: false,
+      // callback_url: "http://localhost:3000",
+      timeout: 300,
+      prefill: {
+        name: data.name,
+        email: data.email,
+        contact: data.mobileNumber,
+      },
+      handler: async function (response: any) {
+        const resData = {
+          orderCreationId: data.orderData.id,
+          razorpayPaymentId: response.razorpay_payment_id,
+          razorpayOrderId: response.razorpay_order_id,
+          razorpaySignature: response.razorpay_signature,
+        };
+        console.log(resData);
+        router.replace("/");
+      },
+    };
+
+    // console.log(window);
+    const paymentObject = new (window as any).Razorpay(options);
+    paymentObject.open();
+  };
 
   return (
     <div className={classes.container}>
-      {/* {contextHolder} */}
+      {contextHolder}
       <div className={classes.navbar}>
         <div className={classes.topImage}>
           <Image src={topImage} alt="Excellence Foundation" />
@@ -53,7 +92,7 @@ export default function PaymentComponent(data: Props): JSX.Element {
             </p>
           </div>
         </div>
-        <button>PAY NOW</button>
+        <button onClick={onPaymentHandler}>PAY NOW</button>
       </div>
       <div className={classes.footer}>
         <div className={classes.bottomImage}>
