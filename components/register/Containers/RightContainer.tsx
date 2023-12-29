@@ -95,6 +95,7 @@ export default function RightContainer() {
         },
       });
       const result = await response.json();
+      // console.log(result);
       if (result.errorMessage) {
         if (result.data) {
           if (result.data[0]) {
@@ -111,14 +112,6 @@ export default function RightContainer() {
       localStorage.setItem("Name", name!);
       localStorage.setItem("MobileNumber", mobileNumber!);
       localStorage.setItem("Email", email!);
-      router.replace("/register/payment");
-    } catch (error: any) {
-      api["error"]({
-        message: "Error",
-        description: error.message,
-        duration: null,
-      });
-    } finally {
       if (fullNameRef.current != null) fullNameRef.current.value = "";
       if (emailRef.current) emailRef.current.value = "";
       if (collegeRef.current) collegeRef.current.value = "";
@@ -130,6 +123,14 @@ export default function RightContainer() {
       setBatches([]);
       setCourseValue(null);
       setReference(null);
+      router.replace("/register/payment");
+    } catch (error: any) {
+      api["error"]({
+        message: "Error",
+        description: error.message,
+        duration: null,
+      });
+    } finally {
       setLoading(false);
     }
   };

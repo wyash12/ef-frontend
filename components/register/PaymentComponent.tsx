@@ -7,6 +7,7 @@ import { notification } from "antd";
 import { useEffect, useState } from "react";
 import OrderModel from "@/models/OrderModel";
 import { useRouter } from "next/router";
+import { serverUrl } from "@/data/server_url";
 
 interface Props {
   trainingName: string;
@@ -49,14 +50,42 @@ export default function PaymentComponent(data: Props): JSX.Element {
         contact: data.mobileNumber,
       },
       handler: async function (response: any) {
-        const resData = {
-          orderCreationId: data.orderData.id,
-          razorpayPaymentId: response.razorpay_payment_id,
-          razorpayOrderId: response.razorpay_order_id,
-          razorpaySignature: response.razorpay_signature,
-        };
-        console.log(resData);
-        router.replace("/");
+        try {
+          const resData = {
+            orderCreationId: data.orderData.id,
+            razorpayPaymentId: response.razorpay_payment_id,
+            razorpayOrderId: response.razorpay_order_id,
+            razorpaySignature: response.razorpay_signature,
+          };
+          // console.log(resData);
+          const res = await fetch(
+            `${serverUrl}/course-registration/payment/status`,
+            {
+              body: JSON.stringify(resData),
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
+          const result = await res.json();
+          // console.log(result);
+          if (result.errorMessage) {
+            throw new Error(result.errorMessage);
+          }
+          if (!result.message) {
+            throw new Error("Something went wrong!!");
+          }
+          alert(result.message);
+          localStorage.clear();
+          router.replace("/");
+        } catch (error: any) {
+          alert(
+            "Something went wrong! Please try to contact administration at +91-8830135459"
+          );
+          localStorage.clear();
+          router.replace("/register");
+        }
       },
     };
 

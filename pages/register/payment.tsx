@@ -19,7 +19,7 @@ export default function Payment(): JSX.Element {
 
   if (typeof window !== "undefined") {
     window.onunload = () => {
-      // localStorage.clear();
+      localStorage.clear();
     };
   }
 
@@ -37,6 +37,7 @@ export default function Payment(): JSX.Element {
       localMobileNumber === null ||
       localEmail === null
     ) {
+      localStorage.clear();
       router.replace("/register");
       return;
     }
