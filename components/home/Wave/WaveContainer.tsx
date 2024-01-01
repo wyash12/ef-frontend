@@ -6,7 +6,7 @@ import { CounterData } from "@/data/counter_data";
 export default function WaveContainer(): JSX.Element {
   return (
     <div className={classes.ocean}>
-      <div className={classes.wave}></div>
+      {/* <div className={classes.wave}></div> */}
       <div className={classes.values}>
         <h1>
           The most adored community <FaHeart className={classes.heart} />

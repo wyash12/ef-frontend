@@ -1,38 +1,146 @@
-.ocean { 
-  height: 60vh;
-  width: 100%;
-  position: relative;
-  overflow-x: hidden;
+// .ocean {
+//   height: 60vh;
+//   width: 100%;
+//   position: relative;
+//   overflow-x: hidden;
 
-  .wave {
-    background: url(../../../public/wave.png) repeat-x; 
-    position: absolute;
-    bottom: 0;
-    width: 6400px;
-    height: 100%;
-    animation: wave 38s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
-    // z-index: 99;
-  }
+//   .wave {
+//     background: url(../../../public/wave.png) repeat-x;
+//     position: absolute;
+//     bottom: 0;
+//     width: 6400px;
+//     height: 100%;
+//     animation: wave 38s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+//     transform: translate3d(0, 0, 0);
+//     // z-index: 99;
+//   }
+
+//   .values {
+//     // z-index: 100;
+//     position: absolute;
+//     height: 50vh;
+//     bottom: 4rem;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     // justify-content: space-evenly;
+//     justify-content: flex-end;
+//     gap: 2rem;
+//     color: white;
+
+//     h1 {
+//       font-size: 2.2rem;
+//       font-weight: 600;
+
+//       .heart {
+//         color: rgba(255, 0, 0, 0.973);
+//         // background-color: red;
+//       }
+//     }
+
+//     .counterDiv {
+//       width: 100%;
+//       display: flex;
+//       justify-content: space-evenly;
+//       // padding: 0 10rem;
+//     }
+//   }
+// }
+
+// @keyframes wave {
+//   0% {
+//     margin-left: 0;
+//   }
+//   100% {
+//     margin-left: -1600px;
+//   }
+// }
+
+// @media (max-width: 1049px) {
+//   .ocean {
+//     .values {
+//       h1 {
+//         font-size: 2rem;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 900px) {
+//   .ocean {
+//     .values {
+//       h1 {
+//         font-size: 1.8rem;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 650px) {
+//   .ocean {
+//     .values {
+//       h1 {
+//         font-size: 1.6rem;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 550px) {
+//   .ocean {
+//     height: 50vh;
+//     .values {
+//       h1 {
+//         font-size: 1.4rem;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 440px) {
+//   .ocean {
+//     // height: 75vh;
+
+//     .values {
+//       h1 {
+//         padding: 0 0.5rem;
+//         text-align: center;
+//         font-size: 1.2rem;
+//       }
+
+//       .counterDiv {
+//         // padding: 1rem;
+//         gap: 1rem;
+//         flex-wrap: wrap;
+//       }
+//     }
+//   }
+// }
+
+.ocean {
+  background: url(../../../public/wave.png);
+  background-size: auto 100%;
+  height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  width: 100%;
 
   .values {
-    // z-index: 100;
-    position: absolute;
-    height: 50vh;
-    bottom: 2rem;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: space-evenly;
-    justify-content: flex-end;
     gap: 2rem;
-    color: white;
+    color: #fff;
+    width: 100%;
 
     h1 {
-      font-size: 1.6rem;
+      font-size: 2.2rem;
       font-weight: 600;
-      
+      text-transform: capitalize;
+
       .heart {
         color: rgba(255, 0, 0, 0.973);
         // background-color: red;
@@ -40,49 +148,54 @@
     }
 
     .counterDiv {
-      width: 100%;
+      width: 90%;
       display: flex;
       justify-content: space-evenly;
       // padding: 0 10rem;
-    } 
-
-  }
-}
-
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-
-@media (max-width: 2210px) {
-  .ocean {
-    height: 60vh;
-    .values{
-      height: 30vh;
     }
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1049px) {
   .ocean {
-    height: 52vh;
-    .values{
-      height: 30vh;
-    }
-  }
-}
+    height: 50vh;
 
-
-@media (max-width: 920px) {
-  .ocean { 
-    height: 30vh;
     .values {
-      height: 40vh;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .ocean {
+    // height: 40vh;
+
+    .values {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .ocean {
+    // height: 35vh;
+
+    .values {
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .ocean {
+    // height: 35vh;
+    .values {
       h1 {
         font-size: 1.4rem;
       }
@@ -90,68 +203,28 @@
   }
 }
 
-@media (max-width: 774px) {
-  .ocean { 
-    height: 40vh;
-    .values {
-      height: 30vh;
-      h1 {
-        font-size: 1.4rem;
-      }
-    }
-  }
-}
+@media (max-width: 440px) {
+  .ocean {
+    height: 48vh;
 
-@media (max-width: 468px) {
-  .ocean { 
-    height: 35vh;
     .values {
-      height: 25vh;
       h1 {
+        padding: 0 0.5rem;
+        text-align: center;
         font-size: 1.2rem;
       }
+
+      .counterDiv {
+        // padding: 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
     }
   }
 }
 
-@media (max-width: 380px) {
-  .ocean { 
+@media (max-width: 322px) {
+  .ocean {
     height: 60vh;
-
-    .values {  
-      height: 45vh;
-      h1 {
-        text-align: center;
-        padding: 0 0.3rem;
-      }
-      .counterDiv {
-        padding: 1rem;
-        gap: 1rem;
-        flex-wrap: wrap;
-      } 
-  
-    }
   }
 }
-
-@media (max-width: 281px) {
-  .ocean { 
-    height: 70vh;
-
-    .values {  
-      height: 40vh;
-      h1 {
-        text-align: center;
-        padding: 0 0.3rem;
-      }
-      .counterDiv {
-        padding: 1rem;
-        gap: 1rem;
-        flex-wrap: wrap;
-      } 
-  
-    }
-  }
-}
-
-

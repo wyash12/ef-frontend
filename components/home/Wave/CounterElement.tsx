@@ -15,7 +15,7 @@ export default function CounterElement({
 
   return (
     <div className={classes.container} ref={counterRef}>
-      <Bounce triggerOnce>
+      <Bounce triggerOnce className={classes.subContainerWrapper}>
         <div className={classes.subContainer}>
           <h1>
             {data.icon}
