@@ -17,7 +17,7 @@ export default function TitleContainer(): JSX.Element {
               options={{
                 loop: true,
                 autoStart: true,
-                delay: 150,
+                delay: 50,
                 strings:
                   "Enhance your personal and professional skills to derive a hassle-free career growth!",
                 deleteSpeed: 20,
@@ -25,12 +25,6 @@ export default function TitleContainer(): JSX.Element {
               }}
             />
           </div>
-          {/* <Button
-            onClick={() => {}}
-            text="Explore >"
-            padding="0.6rem 4rem"
-            fontSize={1.1}
-          /> */}
           <button
             onClick={() => {
               router.push("/#course");

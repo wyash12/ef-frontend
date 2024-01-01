@@ -1,71 +1,78 @@
-.container {
+.containerWrapper {
+  padding: 2rem 0;
+
+  h1 {
+    color: #22405b;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 3rem;
+    text-transform: capitalize;
+  }
+
+  .container {
     position: relative;
     height: 100vh;
     overflow-x: hidden;
-    
+
     .company {
-        background: url(../../../public/placement_logos.png) ;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 200%;
-        background-size: contain;
-        animation: slideshow 60s linear infinite;
+      background: url(../../../public/placement_logos.png);
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 200%;
+      background-size: contain;
+      animation: slideshow 60s linear infinite;
     }
-
-    .title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        padding: 2rem 2rem;
-        // border-radius: 1rem;
-        text-align: center;
-
-        h1 {
-            color: #22405B;
-            font-size: 2.5rem;
-            font-weight: 600;
-            filter: drop-shadow(rgba(0, 0, 0, 0.5) 4px 8px 4px);
-            line-height: 1;
-        }
-    }
+  }
 }
 
 @keyframes slideshow {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: -100%;
-    }
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
 
-@media (max-width: 1120px) {
-    .container {   
-        .title {
-            padding: 1.5rem 1.5rem;
-    
-            h1 {
-                font-size: 2rem;
-            }
-        }
+// @media (max-width: 1120px) {
+//   .container {
+//     .title {
+//       padding: 1.5rem 1.5rem;
+
+//       h1 {
+//         font-size: 2rem;
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 858px) {
+    .containerWrapper {
+      h1 {
+        font-size: 2.4rem;
+        padding: 0 1rem;
+      }
+  
+      .container {
+        margin-top: 2rem;
+      }
     }
-}
+  }
 
 @media (max-width: 631px) {
-    .container {   
-        height: 60vh;
+  .container {
+    height: 60vh;
 
-        .title {
-            padding: 1rem 1rem;
-    
-            h1 {
-                font-size: 1.8rem;
-                filter: drop-shadow(rgba(0, 0, 0, 0.5) 4px 4px 4px);         
-            }   
-        }
+    .title {
+      padding: 1rem 1rem;
+
+      h1 {
+        font-size: 1.8rem;
+        filter: drop-shadow(rgba(0, 0, 0, 0.5) 4px 4px 4px);
+      }
     }
+  }
 }

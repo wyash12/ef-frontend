@@ -4,8 +4,9 @@
   width: 100%;
   display: flex;
   height: 60vh;
-  padding: 0 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
 
   .titleContainer {
     width: 60%;
@@ -23,7 +24,9 @@
       h1 {
         font-size: 2.6rem;
         color: $primary-color;
+        text-transform: capitalize;
       }
+
       .paraWrapper {
         width: 80%;
 
@@ -51,9 +54,8 @@
     justify-content: center;
 
     img {
-      width: 80%;
+      width: 85%;
       height: auto;
-      mix-blend-mode: darken;
     }
   }
 }
@@ -64,33 +66,34 @@
 
     .titleContainer {
       .tContainer {
+        gap: 1.6rem;
+
         h1 {
           font-size: 2rem;
         }
         .paraWrapper {
           .para {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
           }
+        }
+
+        button {
+          font-size: 1rem;
+          padding: 0.4rem 4rem;
         }
       }
     }
   }
 }
 
-@media (max-width: 1042px) {
+@media (max-width: 1049px) {
   .container {
     padding: 6rem 2rem;
 
     .titleContainer {
-      width: 60%;
-
       .tContainer {
-        width: 80%;
         gap: 1.5rem;
 
-        h1 {
-          font-size: 2rem;
-        }
         .paraWrapper {
           width: 80%;
 
@@ -98,20 +101,10 @@
             font-size: 1rem;
           }
         }
-        
+
         button {
-          border-radius: 0.9375rem;
           padding: 0.4rem 3rem;
-          font-size: 1rem;
         }
-      }
-    }
-
-    .imageContainer {
-      width: 40%;
-
-      img {
-        width: 80%;
       }
     }
   }
@@ -120,86 +113,70 @@
 @media (max-width: 842px) {
   .container {
     height: auto;
-    padding: 0rem 2rem;
+    padding: 1rem 1rem;
     flex-direction: column-reverse;
+    margin-bottom: 4rem;
 
     .titleContainer {
       width: 100%;
       text-align: center;
 
       .tContainer {
-        width: 80%;
         align-items: center;
-        gap: 1.5rem;
-
-        h1 {
-          font-size: 2.2rem;
-        }
-
-        .paraWrapper {
-          width: 80%;
-
-          .para {
-            font-size: 1.2rem;
-          }
-        }
       }
     }
 
     .imageContainer {
       width: 100%;
+      margin-bottom: 3rem;
 
       img {
-        width: 20rem;
+        width: 70%;
         height: auto;
       }
     }
   }
 }
 
-@media (max-width: 538px) {
+@media (max-width: 637px) {
   .container {
-    padding: 0;
+    // padding: 0;
     .titleContainer {
       .tContainer {
         h1 {
           font-size: 1.8rem;
         }
-
-        .paraWrapper {
-          .para {
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-
-    .imageContainer {
-      img {
-        width: 16rem;
-        height: auto;
       }
     }
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 547px) {
   .container {
-    padding: 0;
+    // padding: 0;
+    margin-bottom: 1rem;
 
     .titleContainer {
       width: 90%;
+      align-items: center;
+      justify-content: center;
+
       .tContainer {
         width: 100%;
+        gap: 0.8rem;
 
         h1 {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
         }
 
         .paraWrapper {
           width: 100%;
+
+          .para {
+            font-size: 0.9rem;
+          }
         }
-        
+
         button {
           border-radius: 0.9375rem;
           padding: 0.3rem 2rem;
@@ -207,42 +184,22 @@
         }
       }
     }
+    .imageContainer {
+      margin-bottom: 1.6rem;
+    }
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 388px) {
   .container {
     .titleContainer {
       width: 100%;
 
       .tContainer {
-        width: 80%;
-
         h1 {
-          font-size: 1.6rem;
+          font-size: 1.2rem;
+          font-weight: 600;
         }
-
-        .paraWrapper {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 380px) {
-  .container {
-    .titleContainer {
-      .tContainer {
-        h1 {
-          font-size: 1.4rem;
-        }
-      }
-    }
-    .imageContainer {
-      img {
-        width: 12rem;
-        height: auto;
       }
     }
   }

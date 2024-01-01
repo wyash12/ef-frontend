@@ -5,10 +5,10 @@ import Carousel from "react-material-ui-carousel";
 
 export default function PlacementContainer(): JSX.Element {
   return (
-    <div className={classes.container}>
-      <div className={classes.company}></div>
-      <div className={classes.title}>
-        <h1>Placed with industry gaints!</h1>
+    <div className={classes.containerWrapper}>
+      <h1>Placed with industry gaints!</h1>
+      <div className={classes.container}>
+        <div className={classes.company}></div>
       </div>
     </div>
   );

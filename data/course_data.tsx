@@ -1,4 +1,8 @@
-import courseImg from "../public/course.png";
+// import courseImg from "../public/course.png";
+import estimationImg from "../public/estimation_course.png" 
+import constructionImg from "../public/construction_course.png"
+import skillBoosterImg from "../public/skill_booster_course.png" 
+import billingImg from "../public/billing_course.png"
 import CourseElementModel, { TrainingMode } from "@/models/CourseElementModel";
 import { c1f, c2f, c3f, c4f } from "./course/course_features";
 import { c1cc, c2cc, c3cc, c4cc } from "./course/course_content";
@@ -13,7 +17,7 @@ export let CourseData: Array<CourseElementModel> = [
     days: 60,
     features: c1f,
     path: "/course/construction-skill-development-internship-training",
-    courseImg: courseImg,
+    courseImg: constructionImg,
     next_program_date: [
       {
         id: "c1npd1",
@@ -41,7 +45,7 @@ export let CourseData: Array<CourseElementModel> = [
     days: 30,
     features: c2f,
     path: "/course/skill-booster-internship-training-program",
-    courseImg: courseImg,
+    courseImg: skillBoosterImg,
     next_program_date: [
       {
         id: "c1npd1",
@@ -70,7 +74,7 @@ export let CourseData: Array<CourseElementModel> = [
     days: 15,
     features: c3f,
     path: "/course/professional-billing-course",
-    courseImg: courseImg,
+    courseImg: billingImg,
     next_program_date: [
       {
         id: "c1npd1",
@@ -100,7 +104,7 @@ export let CourseData: Array<CourseElementModel> = [
     days: 15,
     features: c4f,
     path: "/course/professional-estimation-and-costing-training",
-    courseImg: courseImg,
+    courseImg: estimationImg,
     next_program_date: [
       {
         id: "c1npd1",
