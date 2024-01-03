@@ -1,5 +1,4 @@
 import classes from "@/components/contact-us/Containers/LeftContain.module.scss";
-// import { Textarea } from "@nextui-org/react";
 
 export default function LeftContain(): JSX.Element {
   const handleSubmit = () => {
@@ -7,51 +6,36 @@ export default function LeftContain(): JSX.Element {
   };
 
   return (
-    <>
-      <div className={classes.Formdiv}>
-        <form>
-          <div className={classes.Namediv}>
-            <label className={classes.Labeldiv} htmlFor="Name">
-              Your Name <span className={classes.spanClass}>*</span>
-            </label>
-            <div>
-              <input className={classes.inputDiv} type="text" />
-            </div>
+    <div className={classes.wrapper}>
+      <form onSubmit={handleSubmit} className={classes.form}>
+        <div className={classes.container}>
+          <label>Your Name</label>
+          <div className={classes.inputWrapper}>
+            <input type="text" />
           </div>
-          <div className={classes.Namediv}>
-            <label htmlFor="Email" className={classes.Labeldiv}>
-              Email <span className={classes.spanClass}>*</span>
-            </label>
-            <div>
-              <input className={classes.inputDiv} type="text" />
-            </div>
+        </div>
+        <div className={classes.container}>
+          <label>Email</label>
+          <div className={classes.inputWrapper}>
+            <input type="text" />
           </div>
-          <div className={classes.Namediv}>
-            <label className={classes.Labeldiv} htmlFor="Subject">
-              Subject
-            </label>
-            <div>
-              <input className={classes.inputDiv} type="text" />
-            </div>
+        </div>{" "}
+        <div className={classes.container}>
+          <label>Subject</label>
+          <div className={classes.inputWrapper}>
+            <input type="text" />
           </div>
-          <div className={classes.Messagediv}>
-            <label className={classes.Labeldiv}>Message</label>
-            <div>
-              <textarea rows={12} cols={121} className={classes.textArea} />
-              {/* <input className={classes.inputDiv} type="textarea" /> */}
-            </div>
+        </div>
+        <div className={classes.messageContainer}>
+          <label>Message</label>
+          <div className={classes.inputWrapper}>
+            <input type="text" />
           </div>
-          <div className={classes.buttonDiv}>
-            <button
-              type="submit"
-              className={classes.buttonB}
-              onClick={handleSubmit}
-            >
-              Send Message
-            </button>
-          </div>
-        </form>
-      </div>
-    </>
+        </div>
+        <button type="submit" className={classes.Button}>
+          Send Message
+        </button>
+      </form>
+    </div>
   );
 }

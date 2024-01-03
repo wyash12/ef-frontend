@@ -1,19 +1,22 @@
-.Imgdiv {
-  // background: black;
-  width: 100%;
-  height: inherit;
+.wrapper {
   display: flex;
+  width: 100%;
   justify-content: center;
-  .Imge {
-    width: 69%;
-    height: fit-content;
+  .Imgdiv {
+    margin-top: -1rem;
   }
 }
 
 @media only screen and (max-width: 1100px) {
-  .Imgdiv {
-    .Imge {
-      width: 90%;
+  .wrapper {
+    .Imgdiv {
+      display: flex;
+      justify-content: center;
+      margin-top: 0rem;
+      .Img {
+        width: 95%;
+        height: 55%;
+      }
     }
   }
 }

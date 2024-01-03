@@ -84,8 +84,6 @@ export default function RightContainer() {
 
     if (friendName) data.reference = data.reference + " (" + friendName + ")";
 
-    // console.log(data);
-
     try {
       const response = await fetch(`${serverUrl}/course-registration/student`, {
         method: "POST",
@@ -95,7 +93,7 @@ export default function RightContainer() {
         },
       });
       const result = await response.json();
-      // console.log(result);
+
       if (result.errorMessage) {
         if (result.data) {
           if (result.data[0]) {
@@ -104,9 +102,7 @@ export default function RightContainer() {
         }
         throw new Error(result.errorMessage);
       }
-      // console.log(result.data);
-      // const t = JSON.stringify(result.data);
-      // console.log(t);
+
       localStorage.setItem("Order", JSON.stringify(result.data));
       localStorage.setItem("Course", courseValue);
       localStorage.setItem("Name", name!);
@@ -152,7 +148,6 @@ export default function RightContainer() {
             <input
               type="text"
               className={classes.inputBox}
-              // placeholder="Enter your full name"
               required
               ref={fullNameRef}
             />
@@ -200,7 +195,6 @@ export default function RightContainer() {
                 ref={birthdayRef}
               />
             </div>
-            {/* <Image src={Insert_Table} alt="" className={classes.imgClass} /> */}
           </div>
           <div className={`${classes.wappDiv} ${classes.divClass}`}>
             <label htmlFor="Whatsapp Nubmer">
@@ -216,14 +210,12 @@ export default function RightContainer() {
             </div>
           </div>
         </div>
-        {/* <div className={classes.batchAndCourseDiv}> */}
+
         <div className={`${classes.courseDiv} ${classes.divClass}`}>
           <label htmlFor="Course">
             Course<span className={classes.spanClass}>*</span>
           </label>
-          {/* <div className={classes.inputWrapper}>
-              <input type="text" className={classes.inputBox} />
-            </div> */}
+
           <div className={classes.selectWrapper}>
             <Select
               onChange={onCourseSelection}
@@ -238,9 +230,7 @@ export default function RightContainer() {
           <label htmlFor="Batch">
             Batch<span className={classes.spanClass}>*</span>
           </label>
-          {/* <div className={classes.inputWrapper}>
-              <input type="text" className={classes.inputBox} />
-            </div> */}
+
           <div className={classes.selectWrapper}>
             <Select
               onChange={onBatchSelection}
@@ -251,7 +241,7 @@ export default function RightContainer() {
             />
           </div>
         </div>
-        {/* </div> */}
+
         <div className={classes.divClass}>
           <label htmlFor="current-address">
             Current Address<span className={classes.spanClass}>*</span>
@@ -310,11 +300,7 @@ export default function RightContainer() {
         {loading ? (
           <span className={classes.loader}></span>
         ) : (
-          <button
-            type="submit"
-            className={classes.register}
-            // onClick={handleSubmit}
-          >
+          <button type="submit" className={classes.register}>
             Proceed
           </button>
         )}
